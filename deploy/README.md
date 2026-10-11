@@ -52,23 +52,27 @@ Open https://jobs.YOURDOMAIN.com on a phone: you should see the sign-in page. Wi
 
 ## 3. Vercel in front (optional)
 
-1. In `deploy/vercel` run `vercel` (or import the folder as a project). It contains `middleware.js`, which forwards
-   every request to the address in an environment variable.
-2. In the Vercel project: Settings, Environment Variables, add
+`deploy/vercel` is a tiny project (`api/proxy.js` + `vercel.json`) that forwards every request, form posts included, to
+your Cloudflare address.
 
-       BACKEND_URL = https://jobs.YOURDOMAIN.com
+1. In Vercel: New Project, import the GitHub repo, set **Root Directory** to `deploy/vercel` and **Application Preset**
+   to **Other**. Leave Build, Output and Install commands empty.
+2. Environment Variables: `BACKEND_URL = https://jobs.YOURDOMAIN.com` (https, no trailing slash). Deploy.
+3. Open the Vercel address on the phone: you should see the sign-in page. Nothing else needs configuring: the proxy
+   tells the gateway which public address the browser used, so sign-in and buttons work as they are.
+4. (Optional) `JOBHUNTER_PUBLIC_URL=https://YOUR-PROJECT.vercel.app` in the `.env` next to `jh`, then `./jh up`, makes
+   Telegram alerts link to the phone address. If buttons ever answer "Blocked: this request did not come from the
+   site itself", also add `JOBHUNTER_ALLOWED_ORIGINS=https://YOUR-PROJECT.vercel.app`.
 
-   (no trailing slash), then redeploy: `vercel --prod`.
-3. Tell the gateway to trust the Vercel address. Add to `.env` in the project folder (next to `jh`) and run `./jh up`:
+Uploads through Vercel are limited to about 4.5 MB (a normal resume is far smaller).
 
-       JOBHUNTER_ALLOWED_ORIGINS=https://YOUR-PROJECT.vercel.app
-       JOBHUNTER_PUBLIC_URL=https://YOUR-PROJECT.vercel.app
+### If sign-in fails
 
-   (The second line makes Telegram alerts link to the phone address.)
-4. Open https://YOUR-PROJECT.vercel.app on the phone. If sign-in works but buttons answer "Blocked: this request did
-   not come from the site itself", step 3 is missing or has a typo.
-
-If Vercel gives an error about the rewrite, skip it and use the Cloudflare address directly: it is the same site.
+1. Open `https://jobs.YOURDOMAIN.com/healthz` (the Cloudflare address, not Vercel). It must show `{"ok":true,"gateway":true}`.
+   Without `"gateway":true` the tunnel points at a profile's port instead of **8780**.
+2. Try signing in on the Cloudflare address directly. If that works but Vercel does not, the problem is in the Vercel project.
+3. `tail -20 .gateway/gateway.log` on the Mac shows every attempt: `login FAILED for kr***@gmail.com ... (wrong password)`,
+   `(empty)` when the form fields did not arrive, or `blocked a cross-site POST` with the addresses it compared.
 
 ## 4. Add it to her home screen
 
