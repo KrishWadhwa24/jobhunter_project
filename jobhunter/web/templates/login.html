@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sign in · Jobhunter</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="login">
+<main>
+  <div class="wrap" style="max-width:420px">
+    <a class="brand" href="/login" style="margin-bottom:28px"><i></i><span style="display:inline">Jobhunter</span></a>
+    <h1>Welcome back</h1>
+    <p class="sub">Sign in to open {% if profile_name %}{{ profile_name }}'s{% else %}your{% endif %} job tracker.</p>
+    {% if error %}<div class="flash err" role="alert" style="margin-top:20px">{{ error }}</div>{% endif %}
+    <form method="post" action="/login" style="margin-top:22px">
+      <input type="hidden" name="next" value="{{ next }}">
+      <div class="field">
+        <label for="em">Email</label>
+        <input id="em" type="email" name="email" value="{{ email }}" autocomplete="username" autocapitalize="none"
+               autocorrect="off" spellcheck="false" inputmode="email" required {% if not email %}autofocus{% endif %}>
+      </div>
+      <div class="field">
+        <label for="pw">Password</label>
+        <input id="pw" type="password" name="password" autocomplete="current-password" autocapitalize="none" autocorrect="off"
+               spellcheck="false" required {% if email %}autofocus{% endif %}>
+      </div>
+      <button class="btn solid block" type="submit">Sign in</button>
+    </form>
+  </div>
+</main>
+</body>
+</html>

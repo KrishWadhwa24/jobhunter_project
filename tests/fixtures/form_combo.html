@@ -1,0 +1,13 @@
+<!doctype html><html><body><form>
+<label for="fn">Full name *</label><input id="fn" name="name" required>
+<label for="em">Email *</label><input id="em" name="email" type="email" required>
+<label for="ph">Mobile number *</label><input id="ph" name="phone" required>
+<label id="cl">Country *</label>
+<div><input id="country" role="combobox" aria-labelledby="cl" aria-expanded="false" required>
+<ul id="opts" style="display:none"></ul></div>
+<script>
+const inp=document.getElementById('country'), ul=document.getElementById('opts');
+const all=['United States','India','Germany'];
+function render(f){ul.innerHTML='';all.filter(x=>x.toLowerCase().includes((f||'').toLowerCase())).forEach(x=>{const li=document.createElement('li');li.setAttribute('role','option');li.textContent=x;li.onclick=()=>{inp.value=x;ul.style.display='none'};ul.appendChild(li)});ul.style.display='block'}
+inp.onclick=()=>render(inp.value); inp.oninput=()=>render(inp.value);
+</script></form></body></html>

@@ -1,0 +1,51 @@
+# ---- Who you are (used in referral messages and batch filtering) ----
+profile:
+  name: Krish
+  college: JIIT
+  degree: B.Tech Computer Science
+  grad_year: 2027
+  available_from: "2027-06"        # earliest date you can join full time
+  about: "SDE intern at MoveInSync (backend and distributed systems); SDE intern at Amazon from Jan 2027"
+
+# ---- Which levels to look for ----
+# Levels the system understands: intern, sde1, sde2, sde3, staff
+# Change this list any time (e.g. add sde2, sde3) then run `make reevaluate`.
+# Every India software job is stored with its level, so the dashboard can also
+# show other levels without refetching.
+targets:
+  levels: [intern, sde1]
+  # Batch rules apply only to intern / sde1 roles. Turn off if you want everything.
+  apply_batch_rules: true
+  # Experience you can honestly claim for entry roles (years, internships count).
+  max_years_for_entry: 1
+  # Years bands used to infer a level when the title has none.
+  years_to_level:
+    sde1: [0, 1]
+    sde2: [2, 4]
+    sde3: [5, 8]
+    staff: [9, 99]
+
+# ---- Where ----
+locations:
+  country: India
+  include_remote_india: true
+  # Leave empty for all of India, or list cities to prefer, e.g. [Bengaluru, Hyderabad]
+  only_cities: []
+
+# ---- What counts as a software role ----
+roles:
+  core: "software|sde|swe|developer|backend|back-end|full[- ]?stack|frontend|front-end|member of technical staff|\\bmts\\b|engineer"
+  adjacent: "sdet|test automation|quality engineer|devops|\\bsre\\b|site reliability|data engineer|machine learning|\\bml\\b|platform engineer|cloud engineer|security engineer"
+  exclude: "sales|marketing|recruit|talent|account|customer success|solutions? (engineer|architect|consultant)|support|finance|legal|hr\\b|human resources|content|designer|accountant|operations|procurement|supply|copywriter|business development|partnerships|manager|director|\\bhead\\b|vp\\b|vice president|technician|mechanical|electrical|hardware|verification|physical design|rtl|asic|fpga|layout|analog|pre-sales|presales|field engineer|network engineer|sourcing|paralegal|counsel|writer"
+
+# ---- Alerts ----
+alerts:
+  min_score: 55
+  include_interns: false          # intern alerts to Telegram (interns still appear on the dashboard)
+  max_individual_alerts: 10       # extra matches in a cycle are summarised in one message
+
+# ---- Schedule ----
+schedule:
+  cycle_minutes: 30               # how often the service wakes up
+  per_company_min_hours: 3        # a company is re-checked at most this often
+  workers: 8

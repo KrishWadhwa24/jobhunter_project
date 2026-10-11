@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Roles · {{ profile_name }}{% endblock %}
+{% block content %}
+<h1>Roles</h1>
+<p class="sub">The kinds of job to look for. Tick the ones that interest you: every careers page is searched for them, and a role has to match one to appear on the Jobs page.</p>
+{% if saved %}<div class="flash">Saved. Jobs are being re-scored and companies re-checked now.</div>{% endif %}
+{% if has_core %}<div class="card flat"><p style="margin:0">Right now your role filter is the hand-written pattern in config.yaml. Ticking anything below replaces it with the chosen role types.</p></div>{% endif %}
+
+<form method="post" action="/roles" style="margin-top:30px">
+  {% for group, fams in groups.items() %}
+    <h2>{{ group }}</h2>
+    <div class="fams">
+    {% for f in fams %}
+      <label class="fam">
+        <input type="checkbox" name="families" value="{{ f.id }}" {% if f.on %}checked{% endif %}>
+        <div class="t"><span>{{ f.name }}{% if f.suggested and not f.on %} <span class="tag">Suggested</span>{% endif %}{% if f.remote %} <span class="tag">Remote friendly</span>{% endif %}</span></div>
+        <div class="b">{{ f.blurb }}</div>
+        {% if f.titles %}<div class="ex">{{ f.titles[:5] | join(' · ') }}</div>{% endif %}
+      </label>
+    {% endfor %}
+    </div>
+  {% endfor %}
+
+  <h2>Your own keywords</h2>
+  <div class="two">
+    <div class="field"><label for="include">Also include titles containing</label><p class="help">Separate with commas or new lines. Example: moderator, data labeller.</p>
+      <textarea id="include" name="include" rows="3">{{ include | join(', ') }}</textarea></div>
+    <div class="field"><label for="exclude">Never show titles containing</label><p class="help">Example: night shift, sales, senior.</p>
+      <textarea id="exclude" name="exclude" rows="3">{{ exclude | join(', ') }}</textarea></div>
+  </div>
+  <div class="savebar"><button class="btn solid" type="submit">Save and re-check</button>
+    <span class="muted">{% if chosen %}{{ chosen | length }} role type{{ '' if chosen | length == 1 else 's' }} selected.{% else %}None selected: every role type for your career is used.{% endif %}
+    {% if not any_suggested %} Tip: pick what describes you under <a href="/settings">Settings</a> to get suggestions.{% endif %}</span></div>
+</form>
+{% endblock %}

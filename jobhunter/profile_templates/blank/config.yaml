@@ -1,0 +1,31 @@
+# A blank profile. Open Settings and Roles on the dashboard to say what you are looking for.
+profile:
+  name: My search
+  backgrounds: []
+
+levels:
+  scheme: general
+
+targets:
+  levels: [intern, entry]
+  apply_batch_rules: false
+
+locations:
+  mode: india
+  include_remote_india: true
+  only_cities: []
+
+roles:
+  families: []
+  include: []
+  exclude_extra: []
+
+alerts:
+  min_score: 50
+  include_interns: true
+  max_individual_alerts: 10
+
+schedule:
+  cycle_minutes: 30
+  per_company_min_hours: 3
+  workers: 6

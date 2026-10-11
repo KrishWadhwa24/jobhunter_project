@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Always open · {{ profile_name }}{% endblock %}
+{% macro qs(kind, india, show) -%}/always-open?kind={{ kind }}&india={{ india }}&show={{ show }}{%- endmacro %}
+{% block content %}
+<h1>Always open</h1>
+<p class="sub">Places that take applications all year, such as tutoring platforms and AI-training programmes. They never appear as a job posting, so they are listed here. {{ total }} in total.</p>
+
+<div class="filters" style="padding-top:26px">
+  <div class="seg">
+    {% for key, label in [('open','To look at'),('applied','Applied'),('all','All')] %}<a href="{{ qs(kind, india, key) }}" class="{% if show == key %}on{% endif %}">{{ label }}</a>{% endfor %}
+  </div>
+  <div class="chips">
+    <a class="chip {% if not kind %}on{% endif %}" href="{{ qs('', india, show) }}">Everything</a>
+    {% for k in kinds %}<a class="chip {% if kind == k %}on{% endif %}" href="{{ qs(k, india, show) }}">{{ k | kind }}</a>{% endfor %}
+    <a class="chip {% if india == 'ok' %}on{% endif %}" href="{{ qs(kind, '' if india == 'ok' else 'ok', show) }}">Open to India</a>
+  </div>
+</div>
+
+{% for it in rows %}
+<article class="item">
+  <div class="main">
+    <div class="nm">{{ it.name }}
+      <span class="tag">{{ it.kind | kind }}</span>
+      {% if it.india_ok == 'yes' %}<span class="tag">India accepted</span>{% elif it.india_ok == 'no' %}<span class="tag">Not for India</span>{% else %}<span class="tag">India unclear</span>{% endif %}
+      {% if it.status == 'applied' %}<span class="tag">Applied</span>{% endif %}
+    </div>
+    <div class="role">{{ it.role }}</div>
+    {% if it.pay %}<div class="meta">Pay: {{ it.pay }}</div>{% endif %}
+    {% if it.requirements %}<ul>{% for r in it.requirements[:5] %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+    {% if it.warning %}<div class="warn"><b>Know before you apply:</b> {{ it.warning }}</div>{% endif %}
+    {% if it.verified != 'yes' %}<div class="meta" style="margin-top:8px">Not checked against the live page yet: confirm the link and details yourself.</div>{% endif %}
+  </div>
+  <div class="actions">
+    <a class="btn solid" href="{{ it.apply_url }}" target="_blank" rel="noopener">Open</a>
+    {% if it.status != 'applied' %}<form class="inline" method="post" action="/always-open/{{ it.id }}"><input type="hidden" name="status" value="applied"><input type="hidden" name="next" value="{{ request.url.path }}?{{ request.url.query }}"><button class="btn" type="submit">I applied</button></form>{% endif %}
+    {% if it.status == 'skip' %}<form class="inline" method="post" action="/always-open/{{ it.id }}"><input type="hidden" name="status" value=""><input type="hidden" name="next" value="{{ request.url.path }}?{{ request.url.query }}"><button class="btn quiet" type="submit">Bring back</button></form>
+    {% elif it.status != 'applied' %}<form class="inline" method="post" action="/always-open/{{ it.id }}"><input type="hidden" name="status" value="skip"><input type="hidden" name="next" value="{{ request.url.path }}?{{ request.url.query }}"><button class="btn quiet" type="submit">Not for me</button></form>{% endif %}
+  </div>
+</article>
+{% else %}
+  <div class="empty">{% if total %}<b>Nothing in this view.</b>{% else %}<b>No always-open list for this profile.</b><br>Add an evergreen.yaml to the profile folder.{% endif %}</div>
+{% endfor %}
+{% endblock %}

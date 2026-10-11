@@ -1,0 +1,21 @@
+<!doctype html><html><body><form onsubmit="return false">
+<label for="fn">Full name *</label><input id="fn" name="name" required>
+<label for="em">Email *</label><input id="em" name="email" type="email" required>
+<label for="rs">Resume *</label><input id="rs" name="resume" type="file" required>
+<label for="cv">Cover letter</label><input id="cv" name="cover_letter" type="file">
+<label for="sd">Earliest start date *</label><input id="sd" name="start" type="date" required>
+<label for="gd">Graduation date *</label><input id="gd" name="grad" placeholder="MM/YYYY" required>
+<label for="why">Why do you want to work at this company? *</label><textarea id="why" name="why" maxlength="900" required></textarea>
+<label for="ab">Tell us about yourself</label><textarea id="ab" name="about"></textarea>
+<label for="gm">Graduation month *</label><select id="gm"><option value="">Select</option><option>April</option><option>May</option><option>June</option></select>
+<div role="radiogroup" aria-label="Are you willing to relocate? *">
+  <button type="button" role="radio" aria-checked="false" onclick="chk(this)">Yes</button>
+  <button type="button" role="radio" aria-checked="false" onclick="chk(this)">No</button></div>
+<label id="cl">Country *</label>
+<button type="button" id="cbtn" aria-haspopup="listbox" aria-labelledby="cl" onclick="document.getElementById('lst').style.display='block'">Select</button>
+<ul role="listbox" id="lst" style="display:none"><li role="option" onclick="pick('United States')">United States</li><li role="option" onclick="pick('India')">India</li></ul>
+<script>
+function chk(b){b.parentElement.querySelectorAll('[role=radio]').forEach(x=>x.setAttribute('aria-checked','false'));b.setAttribute('aria-checked','true')}
+function pick(t){document.getElementById('cbtn').textContent=t;document.getElementById('lst').style.display='none'}
+</script>
+</form></body></html>

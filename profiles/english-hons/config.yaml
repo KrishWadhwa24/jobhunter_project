@@ -1,0 +1,35 @@
+# Profile: BA English (Hons), chess, remote tutoring. Edit here or (easier) on the dashboard's Settings and Roles pages,
+# which write settings.yaml next to this file and override anything below.
+profile:
+  name: Parnika
+  degree: BA English (Hons)
+  about: "BA English (Hons) graduate and national-level chess player; looking at writing, editing, tutoring, AI training and customer-facing roles"
+  backgrounds: [english, writing, teaching, chess, sports, customer, remote, any-degree]
+
+levels:
+  scheme: general            # Intern, Entry level, Mid level, Senior, Lead
+
+targets:
+  levels: [intern, entry]
+  apply_batch_rules: false   # graduation-batch rules are for software hiring only
+
+locations:
+  mode: india_or_remote      # India, plus remote roles open to applicants from anywhere
+  include_remote_india: true
+  only_cities: []
+
+roles:
+  families: [writing_content, editorial_publishing, journalism_media, communications_pr, marketing_social,
+             teaching_education, chess_sports, customer_service, ai_language]
+  include: []
+  exclude_extra: []
+
+alerts:
+  min_score: 50
+  include_interns: true
+  max_individual_alerts: 10
+
+schedule:
+  cycle_minutes: 30
+  per_company_min_hours: 3
+  workers: 6

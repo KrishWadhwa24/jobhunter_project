@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Jobhunter">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <title>{% block title %}{{ profile_name }} · Jobhunter{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><i></i><span>Jobhunter</span></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mainnav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line class="l1" x1="4" y1="7" x2="20" y2="7"/><line class="l2" x1="4" y1="12" x2="20" y2="12"/><line class="l3" x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+    <nav id="mainnav">
+      <a href="/" class="{% if nav == '/' or nav.startswith('/job') %}on{% endif %}">Jobs</a>
+      {% if has_evergreen %}<a href="/always-open" class="{% if nav.startswith('/always-open') %}on{% endif %}">Always open</a>{% endif %}
+      <a href="/roles" class="{% if nav.startswith('/roles') %}on{% endif %}">Roles</a>
+      <a href="/companies" class="{% if nav.startswith('/companies') %}on{% endif %}">Companies</a>
+      <a href="/resume" class="{% if nav.startswith('/resume') %}on{% endif %}">Resume</a>
+      <a href="/settings" class="{% if nav.startswith('/settings') %}on{% endif %}">Settings</a>
+      {% if gated %}<form class="navout" method="post" action="/logout"><button type="submit">Sign out{% if user_email %} <span class="muted">{{ user_email }}</span>{% endif %}</button></form>{% endif %}
+    </nav>
+    {% if gated %}
+    <form class="inline signout" method="post" action="/logout"><button class="btn quiet tiny" type="submit" title="{{ user_email }}">Sign out</button></form>
+    {% endif %}
+    {% if not remote %}
+    <details class="switch">
+      <summary>{{ profile_name }}</summary>
+      <div class="menu">
+        {% for p in profiles %}
+          {% if p.slug == profile_slug %}<a class="cur" href="/">{{ p.name }} &middot; this one</a>
+          {% elif p.port %}<a href="http://127.0.0.1:{{ p.port }}/">{{ p.name }}</a>
+          {% else %}<a href="#" onclick="return false">{{ p.name }}<span class="muted"> &middot; no port set</span></a>{% endif %}
+        {% endfor %}
+        <div class="note">Each profile has its own jobs, companies, resume and alerts. Add one with <b>./jh new</b>.</div>
+      </div>
+    </details>
+    {% endif %}
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    {% block content %}{% endblock %}
+  </div>
+</main>
+<footer>
+  <div class="wrap statusline">
+    <span><span class="dot {% if not last_cycle %}off{% elif running %}live{% endif %}"></span>{% if running %}Checking companies now{% else %}Last check {{ last_cycle | ago }}{% endif %}</span>
+    <span>{{ counts.in_scope }} open roles tracked</span>
+    <form class="inline" method="post" action="/cycle/run"><button class="btn quiet tiny" type="submit">Check now</button></form>
+  </div>
+</footer>
+<script>
+(function () {
+  var head = document.querySelector('header.top'), btn = document.querySelector('.burger');
+  if (!btn) return;
+  function set(open) { head.classList.toggle('menu-open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+  btn.addEventListener('click', function (e) { e.stopPropagation(); set(!head.classList.contains('menu-open')); });
+  document.addEventListener('click', function (e) { if (!head.contains(e.target)) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 860) set(false); });
+})();
+// close any open "..." or profile menu when you tap somewhere else
+document.addEventListener('click', function (e) {
+  document.querySelectorAll('details.more[open], details.switch[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+});
+</script>
+</body>
+</html>

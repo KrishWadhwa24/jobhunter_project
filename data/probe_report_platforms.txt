@@ -1,0 +1,451 @@
+Opening https://zupee.keka.com/careers (waits about 12.0 s)...
+
+final address : https://zupee.keka.com/careers/Content/403.html
+title         : 'Forbidden Access'
+page text     : 60 characters
+links         : 0
+frames        : ['https://zupee.keka.com/careers/Content/403.html']
+
+--- first text on the page ---
+FORBIDDEN ACCESS
+
+Sorry, you don't have access to this page.
+html size     : 1791   browser: webdriver=False  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Hea
+
+--- requests that failed ---
+  image https://zupee.keka.com/careers/Content/Images/icon_lock.png -> net::ERR_FAILED
+  font https://cdn.keka.com/shared/fonts/proximanova/proximanova-semibold-webfont.woff2 -> net::ERR_FAILED
+  font https://cdn.keka.com/shared/fonts/proximanova/proximanova-regular-webfont.woff2 -> net::ERR_FAILED
+  font https://cdn.keka.com/shared/fonts/proximanova/proximanova-semibold-webfont.woff -> net::ERR_FAILED
+  font https://cdn.keka.com/shared/fonts/proximanova/proximanova-regular-webfont.woff -> net::ERR_FAILED
+  font https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2 -> net::ERR_FAILED
+
+--- browser console ---
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+
+--- JSON the page loaded ---
+
+--- requests (page, scripts, xhr/fetch) ---
+  302 GET  document https://zupee.keka.com/careers
+  200 GET  document https://zupee.keka.com/careers/Content/403.html
+
+--- first links ---
+
+screenshot saved to /Users/krishwadhwa/Documents/jobhunter_project/data/probe.png
+
+==========================
+Opening https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b (waits about 12.0 s)...
+
+final address : https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b
+title         : 'NAVI TECHNOLOGIES LIMITED'
+page text     : 109 characters
+links         : 2
+frames        : ['https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b', 'https://yyxv71pj44p6.statuspage.io/embed/frame', 'https://api.razorpay.com/v1/checkout/public?traffic_env=canary&build=2e40322fad0fe36b4f52a2c46cc6c2a5c067b97c&build_v1=755bf4b2e2419bf0ffc2bac7c1fd6e126753d61d&checkout_v2=1&new_session=1&unified_session_id=TmXv1G7QLQPj3d&session_token=BC6A16EACFBA275EDB6D3954A9B496DB6F1C8F57627D6D96166858FE815CF3A51B7350F1EF40395D53F3FD96092FD6F481A0ECF5DC675642FADEB29FD5C8EBD2AC0EC03EB9E2C67C9653047B9D8271BC4F026E3CE561142BB396664479F08664CADC56AD0733F045']
+page errors   :
+  Request failed with status code 400
+  Request failed with status code 400
+
+--- first text on the page ---
+Candidate Login
+Open Positions  
+
+
+
+No Jobs listed
+There are no Jobs listed yet, come back later.
+
+Powered by
+html size     : 61290   browser: webdriver=False  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Hea
+
+--- requests that failed ---
+  fetch https://www.google-analytics.com/g/collect?v=2&tid=G-36T6S0LNJM&gtm=45je6a72v894685646za208zd894685646xf1&_p=1791709686404&gcd=13l -> net::ERR_ABORTED
+  fetch https://www.google-analytics.com/g/collect?v=2&tid=G-36T6S0LNJM&gtm=45je6a72v894685646za200zd894685646xf1&_p=1791709686404&gcd=13l -> net::ERR_ABORTED
+  font https://fonts.gstatic.com/s/inter/v8/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2 -> net::ERR_FAILED
+  font https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2 -> net::ERR_FAILED
+  font https://fonts.gstatic.com/s/mavenpro/v40/7Au9p_AqnyWWAxW2Wk3GzWQIElsO0w.woff2 -> net::ERR_FAILED
+  image https://navi.turbohire.co/static/media/thLogo.2502642f.svg -> net::ERR_FAILED
+  image https://navi.turbohire.co/static/media/openPositionLogo.a246a9c6.svg -> net::ERR_FAILED
+  image https://navi.turbohire.co/static/media/careerPageHeaderBg.8c4df78e.svg -> net::ERR_FAILED
+  image https://navi.turbohire.co/static/media/newJobImage.eda9223b.png -> net::ERR_FAILED
+
+--- browser console ---
+  warning: Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please 
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: the server responded with a status of 400 (Bad Request)
+  error: Failed to load resource: the server responded with a status of 400 (Bad Request)
+  error: Failed to load resource: the server responded with a status of 400 (Bad Request)
+  error: Failed to load resource: the server responded with a status of 400 (Bad Request)
+  error: Failed to load resource: the server responded with a status of 400 (Bad Request)
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+
+--- JSON the page loaded ---
+         2 bytes  https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
+      1057 bytes  https://thapi-stage2.azurewebsites.net/api/token/noauth
+      1057 bytes  https://thapi-stage2.azurewebsites.net/api/token/noauth
+      1057 bytes  https://thapi-stage2.azurewebsites.net/api/token/noauth
+      1057 bytes  https://thapi-stage2.azurewebsites.net/api/token/noauth
+      1057 bytes  https://thapi-stage2.azurewebsites.net/api/token/noauth
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/careerpage/departments/org?orgId=3e818601-0baa-429c-b6f8-4b
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/verifieddomains
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/publicorganizations/3e818601-0baa-429c-b6f8-4b
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/policydetails
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/licenseDetails
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/publicorganizations/3e818601-0baa-429c-b6f8-4b
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/organizations/clientele/org?orgId=3e818601-0baa-429c-b6f8-4b
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/careerpage/departments/org?orgId=3e818601-0baa-429c-b6f8-4b
+        38 bytes  https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/verifieddomains
+
+--- requests (page, scripts, xhr/fetch) ---
+  200 GET  document https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b
+  200 GET  script   https://code.jquery.com/jquery-3.7.0.slim.min.js
+  200 GET  script   https://navi.turbohire.co/runtime-main.f2f068156e4b7c90afab.js
+  200 GET  script   https://turbohire.statuspage.io/embed/script.js
+  200 GET  script   https://navi.turbohire.co/30.83fbae2815ce51b795d9.chunk.js
+  200 GET  script   https://checkout.razorpay.com/v1/checkout.js
+  200 GET  script   https://fast.wistia.com/embed/medias/iwl55pmvfx.jsonp
+  200 GET  script   https://fast.wistia.com/embed/medias/fc0tvbwr6k.jsonp
+  200 GET  document https://yyxv71pj44p6.statuspage.io/embed/frame
+  200 GET  script   https://fast.wistia.com/embed/medias/vtxfkj6k9g.jsonp
+  200 GET  script   https://apis.google.com/js/platform.js
+  200 GET  script   https://www.webrtc-experiment.com/EBML.js
+  200 GET  script   https://vjs.zencdn.net/7.3.0/video.min.js
+  200 GET  script   https://cdn.razorpay.com/static/cx/razorpay-risk-detection/bundle.js
+  200 GET  script   https://www.googletagmanager.com/gtag/js?id=G-36T6S0LNJM
+  200 GET  script   https://fast.wistia.com/assets/external/E-v1.js
+  200 GET  document https://api.razorpay.com/v1/checkout/public?traffic_env=canary&build=2e40322fad0fe36b4f52a2c46cc6c2a5c067b97c&build_v1=755bf4b2e2419bf0ffc2bac7c1fd6e126753d61d&checkout_v2=1&new_session=1&unified_sess
+  200 GET  script   https://fast.wistia.com/embed/medias/v1zlv77sxf.jsonp
+  200 GET  script   https://checkout-static-next.razorpay.com/build/2e40322fad0fe36b4f52a2c46cc6c2a5c067b97c/v2-entry.modern.js
+  200 GET  script   https://navi.turbohire.co/18.51144c91e4c98b8f1d9f.chunk.js
+  204 POST fetch    https://www.google-analytics.com/g/collect?v=2&tid=G-36T6S0LNJM&gtm=45je6a72v894685646za208zd894685646xf1&_p=1791709686404&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=1856140623.1791709688&frm=0&ngs=1&pscd
+  200 GET  script   https://maps.googleapis.com/maps/api/js?key=AIzaSyD0GLpVDoqqx3pi5RykIYDswEwxV-dNGFc&libraries=places
+  200 GET  script   https://browser.sentry-cdn.com/9.6.1/bundle.min.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-loader-bbcaf345.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-a4faa17d.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-84109e21.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-bc0edfb8.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-80bd9777.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-0432c343.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-30383c08.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-7813c287.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-v2-analytics-a75e5883.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-6a637d99.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-dd59cbe5.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-29b85af9.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-c391aad6.modern.js
+  200 GET  xhr      https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-app-d99ae1e7.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-email-sanitisation-a0ac959e.modern.js
+  200 GET  script   https://checkout-static-next.razorpay.com/build/chunks/v2-entry-lang-en-ts-1a506c63.modern.js
+  200 GET  script   https://navi.turbohire.co/main.afb19757dfe7bf1f05e8.chunk.js
+  200 GET  script   https://navi.turbohire.co/13.0b4ce5e9f85bb9a8836a.chunk.js
+  200 GET  script   https://navi.turbohire.co/25.8ecc67f346ae8cc46878.chunk.js
+  200 GET  script   https://navi.turbohire.co/17.fd600e958c53f3caab04.chunk.js
+  200 GET  script   https://navi.turbohire.co/38.c65602a5859c76330216.chunk.js
+  200 GET  script   https://az416426.vo.msecnd.net/scripts/a/ai.0.js
+  200 GET  script   https://navi.turbohire.co/40.e1232192b3ee8b0fb535.chunk.js
+  204 POST fetch    https://www.google-analytics.com/g/collect?v=2&tid=G-36T6S0LNJM&gtm=45je6a72v894685646za200zd894685646xf1&_p=1791709686404&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1856140623.1791709688
+  200 GET  fetch    https://thapi-stage2.azurewebsites.net/api/token/noauth
+  200 GET  fetch    https://thapi-stage2.azurewebsites.net/api/token/noauth
+  200 GET  fetch    https://thapi-stage2.azurewebsites.net/api/token/noauth
+  200 GET  fetch    https://thapi-stage2.azurewebsites.net/api/token/noauth
+  200 GET  fetch    https://thapi-stage2.azurewebsites.net/api/token/noauth
+  400 GET  xhr      https://thapi-stage2.azurewebsites.net/api/careerpage/departments/org?orgId=3e818601-0baa-429c-b6f8-4b
+  400 GET  xhr      https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/verifieddomains
+  400 GET  xhr      https://thapi-stage2.azurewebsites.net/api/publicorganizations/3e818601-0baa-429c-b6f8-4b
+  400 GET  xhr      https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/policydetails
+  400 GET  xhr      https://thapi-stage2.azurewebsites.net/api/organizations/3e818601-0baa-429c-b6f8-4b/licenseDetails
+  200 GET  script   https://az416426.vo.msecnd.net/scripts/a/ai.0.js
+  200 GET  script   https://navi.turbohire.co/24.e3f6d1a601f809bc3cc5.chunk.js
+
+--- first links ---
+  ''                                                               https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b#
+  ''                                                               https://www.turbohire.co/
+
+screenshot saved to /Users/krishwadhwa/Documents/jobhunter_project/data/probe.png
+
+==========================
+Opening https://careers.kula.ai/slice?jobs=true (waits about 12.0 s)...
+
+final address : https://careers.kula.ai/slice?jobs=true
+title         : 'slice Careers | Open Jobs'
+page text     : 3227 characters
+links         : 33
+frames        : ['https://careers.kula.ai/slice?jobs=true', 'about:blank', 'https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdmwoIpAAAAAGUl86dlBYUTa4G0BrRyTYs52Z1g&co=aHR0cHM6Ly9jYXJlZXJzLmt1bGEuYWk6NDQz&hl=en&v=nY0xPItgwtlvjEjk2TqdwOQz&size=invisible&anchor-ms=20000&execute-ms=30000&cb=4viyq5cj8x9o', 'about:blank', 'about:blank']
+
+--- first text on the page ---
+Open Positions
+
+Come, join the slice crew!
+
+All departments
+
+All locations
+
+Technology
+
+SDE 2 - Backend
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Technology
+
+SDE 2 - Data Platform
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Technology
+
+Senior Staff Engineer - Infrastructure
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Technology
+
+SRE 3
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Technology
+
+SRE 2
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Product
+
+Fraud Analyst
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Asset
+
+Assistant Manager - Operations
+
+Guwahati, Assam, India
+
+Full time • On-Site
+
+Apply Now
+Asset
+
+Area Credit Manager
+
+India (Remote)
+
+Full time • On-Site
+
+Apply Now
+Asset
+
+Credit Manager
+
+India (Remote)
+
+Full time • On-Site
+
+Apply Now
+Asset - Distribution
+
+Branch Sales Manager
+
+India (Remote)
+
+Full time • On-Site
+
+Apply Now
+Product
+
+Senior Product Analyst
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Vigilance
+
+AML Associate
+
+Bengaluru, Karnataka, India
+
+Full time • On-Site
+
+Apply Now
+Branch Banking
+
+Branch Head
+
+India (Remote)
+
+Full time • On-Site
+
+Apply Now
+B
+html size     : 525337   browser: webdriver=False  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Hea
+
+--- requests that failed ---
+  font https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2 -> net::ERR_FAILED
+  image https://www.gstatic.com/recaptcha/api2/logo_48.png -> net::ERR_FAILED
+  font https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2 -> net::ERR_FAILED
+  script https://www.google.com/recaptcha/api2/webworker.js?hl=en&v=nY0xPItgwtlvjEjk2TqdwOQz -> net::ERR_ABORTED
+
+--- browser console ---
+  error: Failed to load resource: net::ERR_FAILED
+  warning: [.WebGL-0x1140047de00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+  warning: No available adapters.
+  warning: No available adapters.
+  error: Failed to load resource: net::ERR_FAILED
+  error: Failed to load resource: net::ERR_FAILED
+
+--- JSON the page loaded ---
+    282034 bytes  https://careers.kula.ai/api/internal/ats_job_posts?accountName=slice&page=1&type=ats_job_post.index&items=99
+
+--- requests (page, scripts, xhr/fetch) ---
+  200 GET  document https://careers.kula.ai/slice?jobs=true
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/webpack-1175531cf6d9dff7.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/33d7a86f-2e5721a930ea3691.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/main-app-61afead5074ff8e3.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/8434-d79ae4d355548689.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/3885-95791f9188f44ee7.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/6415-aa11f50a5caecb7d.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/180-db38e689fa3194c4.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/6060-466d9426f3d57f79.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/3098-604dce99edc592f9.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/59-7bb2c38be65cbaf7.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/935-bbbd05f0ef7ada4c.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/7410-70bcf50f577c966b.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/app/%5BaccountName%5D/layout-379c56d753289d41.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/7611-b05bf9922702fcce.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/0bbdf7f2-204a0e18a7ecaaa4.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/5927-9f7513869f6ecb88.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/1446-43da6028ca5c5146.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/7327-5eb5e56a37c07bcb.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/4330-e82f62f0f47ec6a0.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/4901-f35e4931a988eba4.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/app/%5BaccountName%5D/page-9d53e408a238c188.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/9017-4ecd6548737c512b.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/app/not-found-fb9f35fa5e04e54d.js
+  200 GET  script   https://careers-cdn.kula.ai/_next/static/chunks/3d32f239-9ebd7afc13550758.js
+  200 GET  script   https://www.google.com/recaptcha/api.js?render=6LdmwoIpAAAAAGUl86dlBYUTa4G0BrRyTYs52Z1g
+  200 GET  script   https://fpjscdn.net/v3/RfO9Kl1DBr76bH7D4lrk
+  200 GET  script   https://www.gstatic.com/recaptcha/releases/nY0xPItgwtlvjEjk2TqdwOQz/recaptcha__en.js
+  200 GET  fetch    https://careers.kula.ai/api/internal/ats_job_posts?accountName=slice&page=1&type=ats_job_post.index&items=99
+  200 GET  xhr      https://identification.kula.ai/N3Sd/btJIvb3/XWDS5?q=RfO9Kl1DBr76bH7D4lrk
+  200 GET  document https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdmwoIpAAAAAGUl86dlBYUTa4G0BrRyTYs52Z1g&co=aHR0cHM6Ly9jYXJlZXJzLmt1bGEuYWk6NDQz&hl=en&v=nY0xPItgwtlvjEjk2TqdwOQz&size=invisible&anchor-ms=20000&exe
+  200 GET  script   https://www.gstatic.com/recaptcha/releases/nY0xPItgwtlvjEjk2TqdwOQz/recaptcha__en.js
+
+--- first links ---
+  'Apply Now'                                                      https://careers.kula.ai/slice/50594-sde-2-backend?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50595-sde-2-data-platform?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50597-senior-staff-engineer-infrastructure?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50598-sre-3?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50600-sre-2?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50605-fraud-analyst?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50609-assistant-manager-operations?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50611-area-credit-manager?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50612-credit-manager?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50614-branch-sales-manager?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50615-senior-product-analyst?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50616-aml-associate?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50617-branch-head?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50618-asst-branch-head?jobs=true
+  'Apply Now'                                                      https://careers.kula.ai/slice/50619-relationship-officer-liability?jobs=true
+
+screenshot saved to /Users/krishwadhwa/Documents/jobhunter_project/data/probe.png
+
+==========================
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/cli.py", line 434, in <module>
+    sys.exit(main())
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/cli.py", line 426, in main
+    return int(ns.fn(ns) or 0)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/cli.py", line 205, in cmd_probe
+    r = bc._runner.submit(lambda b: bc.probe_page(b, url, shot, int(ns.wait * 1000), not ns.full), timeout=ns.wait + 120)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/collectors/browser.py", line 392, in submit
+    return fut.result(timeout=timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 445, in result
+    return self.__get_result()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/collectors/browser.py", line 405, in _loop
+    fut.set_result(fn(browser))
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/cli.py", line 205, in <lambda>
+    r = bc._runner.submit(lambda b: bc.probe_page(b, url, shot, int(ns.wait * 1000), not ns.full), timeout=ns.wait + 120)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/collectors/browser.py", line 665, in probe_page
+    _load(page, url)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/jobhunter/collectors/browser.py", line 546, in _load
+    page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/sync_api/_generated.py", line 9612, in goto
+    self._sync(
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/_impl/_page.py", line 557, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/_impl/_frame.py", line 156, in goto
+    await self._channel.send(
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+  File "/Users/krishwadhwa/Documents/jobhunter_project/.venv/lib/python3.9/site-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TIMED_OUT at https://ola.skillate.com/
+Call log:
+  - navigating to "https://ola.skillate.com/", waiting until "domcontentloaded"
+
+Opening https://ola.skillate.com/ (waits about 12.0 s)...
+
+==========================
+Opening https://rapido.darwinbox.in/ms/candidate/careers (waits about 12.0 s)...
+
+final address : https://rapido.darwinbox.in/ms/candidate/careers
+title         : 'Rapido'
+page text     : 8 characters
+links         : 0
+frames        : ['https://rapido.darwinbox.in/ms/candidate/careers']
+
+--- first text on the page ---
+Rapido -
+html size     : 1270   browser: webdriver=False  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Hea
+
+--- JSON the page loaded ---
+
+--- requests (page, scripts, xhr/fetch) ---
+  200 GET  document https://rapido.darwinbox.in/ms/candidate/careers
+  200 GET  script   https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920
+  204 POST xhr      https://rapido.darwinbox.in/cdn-cgi/rum?
+
+--- first links ---
+
+screenshot saved to /Users/krishwadhwa/Documents/jobhunter_project/data/probe.png
+
+==========================

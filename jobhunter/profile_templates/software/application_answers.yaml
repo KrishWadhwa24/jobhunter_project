@@ -1,0 +1,56 @@
+# Your standard answers for application forms. The auto-fill worker reads ONLY this file (plus the contact details
+# in resume_facts.yaml). Uploading your master resume on the Resume page fills the empty name, email, phone and
+# education fields below for you; it never overwrites anything you have typed.
+#
+# Anything left empty is NOT guessed: the worker asks you instead and leaves Chrome open for you to finish.
+# It never clicks the final Submit and never ticks consent / terms checkboxes: those stay yours.
+
+personal:
+  first_name: ""
+  last_name: ""
+  full_name: ""
+  email: ""
+  phone: ""                         # 10 digits, as most Indian forms want it
+  phone_full: ""
+  phone_country: India
+  city: ""
+  state: ""
+  country: India
+  location: ""
+  pincode: ""
+  address: ""
+  linkedin: ""
+  github: ""
+  portfolio: ""
+
+education:
+  school: ""
+  degree: "Bachelor of Arts (B.A.) Honours"
+  field: English
+  grad_year: ""
+  grad_month: ""
+  grad_date_iso: ""
+  cgpa: ""
+  cgpa_scale: "10"
+
+work:
+  current_company: ""
+  current_title: ""
+  years_experience: "0"             # full-time years; internships do not count here
+  notice_period: ""
+  earliest_start: ""
+  start_date_iso: ""
+  expected_ctc: "As per company standards / negotiable"
+  current_ctc: ""                   # empty = the worker asks you instead of guessing
+  relocate: ""                      # fill in Yes or No
+  work_authorization: ""            # authorised to work in India: Yes / No
+  sponsorship: ""                   # need visa sponsorship: Yes / No
+  how_heard: "Company careers page"
+  referral: ""
+  previously_applied: ""
+  over_18: ""
+
+# Your own rules, checked BEFORE the built-in ones. First match wins.
+#   match:  a regular expression tested (case-insensitive) against the question text
+#   answer: what to type or choose
+rules: []

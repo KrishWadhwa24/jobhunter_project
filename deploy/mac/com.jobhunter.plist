@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Runs "./jh up" when you log in to the Mac: starts every profile. Edit the path if the project lives elsewhere. -->
+  <key>Label</key><string>com.jobhunter</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>cd /Users/krishwadhwa/Documents/jobhunter_project &amp;&amp; ./jh up</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/jobhunter-up.log</string>
+  <key>StandardErrorPath</key><string>/tmp/jobhunter-up.log</string>
+</dict>
+</plist>

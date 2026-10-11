@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Resume · {{ profile_name }}{% endblock %}
+{% block content %}
+<h1>Master resume</h1>
+<p class="sub">Upload your resume once. Every application gets a copy re-written for that job, using only lines from this resume: nothing is invented. Upload a new version whenever yours changes.</p>
+{% if msg %}<div class="flash">{{ msg }}</div>{% endif %}
+{% if err %}<div class="flash err">{{ err }}</div>{% endif %}
+
+<form class="card" method="post" action="/resume/upload" enctype="multipart/form-data" style="margin-top:28px">
+  <h3>{% if master %}Replace your master resume{% else %}Upload your master resume{% endif %}</h3>
+  <p>PDF, Word (.docx) or plain text, up to 8 MB. {% if ai_reader %}An AI reader helps with tricky layouts; every line is still checked against your file.{% else %}Read with the built-in reader. Add a Groq key to .env for help with tricky layouts.{% endif %}</p>
+  <div class="btnrow" style="margin-top:6px">
+    <input type="file" name="file" accept=".pdf,.docx,.txt,.md" required style="max-width:340px">
+    <button class="btn solid" type="submit" onclick="this.textContent='Reading...'">{% if master %}Replace and rebuild{% else %}Upload{% endif %}</button>
+  </div>
+  {% if master %}<p style="margin:14px 0 0" class="muted">Current file: <a href="/resume/file">{{ master.name }}</a> &middot; uploaded {{ master.uploaded.strftime('%d %b %Y, %H:%M') }}. Replacing it rebuilds your resume facts and keeps the previous version as a backup.</p>{% endif %}
+</form>
+
+{% if facts and facts.error %}
+  <div class="flash err">Your resume facts could not be loaded: {{ facts.error }}. Open Review to fix them.</div>
+{% elif facts %}
+  <h2>What was read</h2>
+  <div class="card">
+    <h3>{{ facts.name }}</h3>
+    <p>{{ facts.education }} &middot; {{ facts.email }}</p>
+    <dl class="kv" style="margin-top:14px">
+      <dt>Experience</dt><dd>{% for c, t, n in facts.experience %}<div>{{ c }}{% if t %} &middot; {{ t }}{% endif %} <span class="muted">({{ n }} line{{ '' if n == 1 else 's' }})</span></div>{% else %}<span class="muted">None found</span>{% endfor %}</dd>
+      <dt>Projects</dt><dd>{% for n, c in facts.projects %}<div>{{ n }} <span class="muted">({{ c }} line{{ '' if c == 1 else 's' }})</span></div>{% else %}<span class="muted">None found</span>{% endfor %}</dd>
+      <dt>Skills</dt><dd>{{ facts.skills }} listed</dd>
+      <dt>Achievements</dt><dd>{{ facts.achievements }}</dd>
+    </dl>
+    {% if report and report.warnings %}<div class="warn"><b>Check these:</b><ul>{% for w in report.warnings %}<li>{{ w }}</li>{% endfor %}</ul></div>{% endif %}
+    <div class="btnrow"><a class="btn solid" href="/resume/review">Review and edit</a>
+      {% if report %}<span class="muted">Read with: {{ 'AI reader' if report.method.startswith('llm') else 'built-in reader' }}</span>{% endif %}</div>
+  </div>
+{% endif %}
+{% endblock %}

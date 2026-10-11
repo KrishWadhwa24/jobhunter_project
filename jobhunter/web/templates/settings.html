@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Settings · {{ profile_name }}{% endblock %}
+{% block content %}
+<h1>Settings</h1>
+<p class="sub">What you are looking for. Saving re-scores every job already stored and starts a fresh check of all companies.</p>
+{% if saved %}<div class="flash">Saved. Jobs are being re-scored and companies re-checked now.</div>{% endif %}
+
+<form method="post" action="/settings" style="margin-top:34px">
+  <div class="field">
+    <label for="name">Profile name</label>
+    <p class="help">Shown at the top of every page and in Telegram messages.</p>
+    <input id="name" name="name" type="text" value="{{ profile_name if profile_name != 'Jobhunter' else '' }}" maxlength="60" style="max-width:340px">
+  </div>
+
+  <div class="field">
+    <span class="lab">About you</span>
+    <p class="help">Used to suggest role types on the Roles page. Pick all that fit.</p>
+    {% for b in backgrounds %}<label class="pill"><input type="checkbox" name="backgrounds" value="{{ b.id }}" {% if b.id in chosen_bg %}checked{% endif %}><span>{{ b.label }}</span></label>{% endfor %}
+  </div>
+
+  <div class="field">
+    <span class="lab">Kind of career</span>
+    <p class="help">Decides which levels exist. Software uses Intern, SDE-1, SDE-2, SDE-3 and Staff. Everything else uses Intern, Entry level, Mid level, Senior and Lead.</p>
+    {% for key, label in [('software', 'Software engineering'), ('general', 'Everything else')] %}
+      <label class="pill"><input type="radio" name="scheme" value="{{ key }}" {% if scheme == key %}checked{% endif %} onchange="jhScheme(this.value)"><span>{{ label }}</span></label>
+    {% endfor %}
+  </div>
+
+  <div class="field">
+    <span class="lab">Levels to show and alert on</span>
+    <p class="help">Other levels are still stored. You can always switch to them with the chips on the Jobs page.</p>
+    {% for key, sch in schemes.items() %}
+      <div class="lv" data-scheme="{{ key }}" {% if key != scheme %}hidden{% endif %}>
+        {% for lv in sch.levels %}<label class="pill"><input type="checkbox" name="levels" value="{{ lv }}" {% if key == scheme and lv in targets %}checked{% elif key != scheme and lv in sch.default_targets %}checked{% endif %} {% if key != scheme %}disabled{% endif %}><span>{{ lv | level }}</span></label>{% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="field">
+    <span class="lab">Where</span>
+    <p class="help">Remote roles that accept applicants from anywhere count as India when you choose the second option.</p>
+    {% for key, label in [('india', 'India only'), ('india_or_remote', 'India or remote anywhere'), ('anywhere', 'Anywhere')] %}
+      <label class="pill"><input type="radio" name="mode" value="{{ key }}" {% if loc.mode == key %}checked{% endif %}><span>{{ label }}</span></label>
+    {% endfor %}
+    <div style="margin-top:12px;max-width:440px"><input name="cities" type="text" value="{{ loc.only_cities | join(', ') }}" placeholder="Only these cities (optional): Bengaluru, Delhi"></div>
+  </div>
+
+  <div class="two">
+    <div class="field">
+      <label for="min_score">Alert threshold</label>
+      <p class="help">Telegram alerts only for roles scoring at least this (0 to 100).</p>
+      <input id="min_score" name="min_score" type="number" min="0" max="100" value="{{ alerts.min_score }}" style="max-width:140px">
+    </div>
+    <div class="field">
+      <span class="lab">Also</span>
+      <label class="pill"><input type="checkbox" name="interns" {% if alerts.include_interns %}checked{% endif %}><span>Alert on internships</span></label>
+      <span id="batchopt" {% if scheme != 'software' %}hidden{% endif %}><label class="pill"><input type="checkbox" name="batch" {% if batch %}checked{% endif %}><span>Skip jobs for other graduating batches</span></label></span>
+    </div>
+  </div>
+
+  <div class="savebar"><button class="btn solid" type="submit">Save and re-check</button><span class="muted">Role types are chosen on the <a href="/roles">Roles</a> page.</span></div>
+</form>
+<script>
+function jhScheme(v){
+  document.querySelectorAll('.lv').forEach(function(d){
+    var on = d.dataset.scheme === v; d.hidden = !on;
+    d.querySelectorAll('input').forEach(function(i){ i.disabled = !on; });
+  });
+  document.getElementById('batchopt').hidden = v !== 'software';
+}
+</script>
+{% endblock %}

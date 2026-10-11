@@ -1,0 +1,1189 @@
+# Always-open opportunities for this profile: tutoring platforms, AI-training programmes, freelance portals.
+# Researched 10 Oct 2026. verified: yes = the page was opened; no = from memory, check the link yourself.
+# Pay, rules and India eligibility change often, so treat them as a starting point.
+
+- id: cambly
+  name: Cambly
+  kind: english-tutoring
+  role: Online English conversation tutor for adult learners worldwide
+  apply_url: https://studentsupport.cambly.com/hc/en-us/articles/44522545417485-Applying-to-become-a-tutor
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - native English speaker
+  - 18+
+  - laptop or desktop with Google Chrome (no phone/tablet)
+  - teaching experience helpful, not required
+  verified: 'yes'
+  warning: Page says native English speakers only; its apply link pointed to a Google search URL, so confirm you land on cambly.com
+  notes: Opened the Cambly help-center page (cambly.com/tutors itself failed to load). Page does not mention country, degree
+    or pay.
+- id: preply
+  name: Preply
+  kind: english-tutoring
+  role: Self-priced online English tutor on a global marketplace
+  apply_url: https://preply.com/en/teach
+  india_ok: unclear
+  pay: tutor sets own rate; page says English tutors average $15-25/hr; commission 33% falling to 18%
+  requirements:
+  - no certification or teaching experience required
+  - laptop/desktop, stable internet, webcam, mic
+  - profile photo and 2-minute intro video
+  - profile review within 3 business days
+  verified: 'yes'
+  warning: Commission on the first trial lesson with a new student is 100%; profiles with contact details or prices get rejected
+  notes: Page does not address country, native-speaker status or degree. Payouts via PayPal, Payoneer, Skrill, Transferwise.
+    Profile creation is free.
+- id: italki
+  name: italki
+  kind: english-tutoring
+  role: Online language teacher or informal tutor, self-set prices
+  apply_url: https://www.italki.com/teacher/apply
+  india_ok: unclear
+  pay: tutor sets own price; italki takes 15% of each taught session; paid in ITC credits (10 ITC = 1 USD)
+  requirements:
+  - computer/tablet, headset, webcam
+  - Skype or other VoIP tool
+  - verified PayPal, Alipay, WebMoney or Skrill account for payout
+  verified: 'yes'
+  warning: ''
+  notes: Page says applying is entirely free and anyone who speaks one of 100+ languages can teach; it gives no country rule
+    or review criteria.
+- id: verbling
+  name: Verbling
+  kind: english-tutoring
+  role: Online language teacher (English) with own rates
+  apply_url: https://www.verbling.com/teach
+  india_ok: 'yes'
+  pay: teacher sets own hourly rate; commission not stated; cash out via PayPal, Wise, Payoneer
+  requirements:
+  - C2 command of the language taught
+  - prior experience teaching that language to non-native speakers (proof/reference letter)
+  - formal teaching certificate preferred
+  - computer, camera, mic, Google Chrome
+  verified: 'yes'
+  warning: Applicants without a certificate or verifiable teaching experience are not accepted; review takes about two weeks
+  notes: Page says you can teach from anywhere and need not be a native speaker.
+- id: lingoda
+  name: Lingoda
+  kind: english-tutoring
+  role: Freelance online English teacher for adult group classes on Zoom
+  apply_url: https://www.lingoda.com/en/become-a-teacher/
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - C2 or above in the language taught
+  - certificate to teach the language as a foreign language
+  - 2-3 years teaching experience (not necessarily online)
+  - fast internet, camera, headset
+  - able to work as a freelancer
+  verified: 'yes'
+  warning: Needs a teaching certificate and 2-3 years experience, so likely a later-stage target
+  notes: Teachers do about 5-20 hrs/week; process is apply, interview, onboarding, first class. Page does not state country
+    or native-speaker rules.
+- id: engoo
+  name: Engoo
+  kind: english-tutoring
+  role: Online English tutor (conversation lessons, mainly Asian students)
+  apply_url: https://engoo.com/teachers
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - tutors go through an extensive training program after joining
+  verified: 'yes'
+  warning: A third-party site (tefl.org, not official) reports very low hourly pay for non-native tutors; not confirmed on
+    Engoo pages
+  notes: Teachers page lists India in its tutor location filter. Official Apply to Teach link is engoo.com/app/teach but it
+    needs JavaScript so its content was not seen.
+- id: ef-english-live
+  name: EF English Live
+  kind: english-tutoring
+  role: Online English teacher for adult learners using the Efekta method
+  apply_url: https://englishlive.ef.com/en/teachers/
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - native or bilingual speaker
+  - TEFL-type certification to teach English
+  - 2+ years relevant teaching experience
+  - online-teaching and Efekta Method training
+  verified: 'yes'
+  warning: Page sets a high bar (certificate plus 2 years experience)
+  notes: Page has no application steps; its Work with us link goes to careers.ef.com, which has a Teaching category and a
+    separate jobs.ef.com search.
+- id: novakid
+  name: Novakid
+  kind: english-tutoring
+  role: Online English teacher for children (ESL, ready-made lessons)
+  apply_url: https://novakidteachers.recruitee.com/o/esl-teacher
+  india_ok: unclear
+  pay: not published (compensation based on completed lessons)
+  requirements:
+  - English proficiency C1
+  - bachelor's degree or higher (form also allows a high-school diploma upload)
+  - at least 1 year teaching English to children
+  - TESOL/TEFL/CELTA preferred, not required
+  - 30-60 second English video intro
+  - photo ID, proof of residence, degree copy
+  verified: 'yes'
+  warning: Form excludes residents of certain Ukrainian regions, Cuba, Iran and North Korea; India not mentioned either way
+  notes: Page does not require native-speaker status. Listing says teach from anywhere, flexible hours.
+- id: magic-ears
+  name: Magic Ears
+  kind: english-tutoring
+  role: Part-time online English teacher for kids aged 5-12 (small groups)
+  apply_url: https://jobs.gohire.io/magicears-ftqdfku6/online-english-teacher-up-to-26-per-hour-11632
+  india_ok: unclear
+  pay: $22-26/hr (independent contractor)
+  requirements:
+  - idiomatic English
+  - teaching certificate and experience preferred
+  - enjoy working with children
+  - background check and contract signing
+  - demo class and trial class
+  verified: 'yes'
+  warning: Background check is a stage of the process; posting states no country, degree or TEFL rule
+  notes: Posting on the company's gohire board. 25-minute lessons with up to 4 students; paid training and paid trial class
+    mentioned.
+- id: 51talk
+  name: 51Talk
+  kind: english-tutoring
+  role: Online English teacher for Chinese learners (Philippines careers site)
+  apply_url: https://www.51talk.com/ph/career.php
+  india_ok: unclear
+  pay: top teachers up to PHP 80,000/month; per-lesson base rate not published
+  requirements:
+  - basic qualifications listed but not detailed
+  - TESOL not required (free training offered)
+  - application form then interview
+  verified: 'yes'
+  warning: This is the Philippines (ph) page; it does not say whether teachers outside the Philippines are hired
+  notes: Page says process can take as little as 3 days; pay rises with teaching level and performance.
+- id: open-english-junior
+  name: Open English Junior
+  kind: english-tutoring
+  role: Online English teacher for kids (Open English Junior)
+  apply_url: https://openenglish.com.br/junior/teaching-opportunities
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - page lists no formal requirements
+  - looks for fun, engaging teachers who love teaching kids
+  verified: 'yes'
+  warning: Brazilian-site page; applications go to an external form
+  notes: Page does not state country, native-speaker, certificate or pay details.
+- id: amazingtalker
+  name: AmazingTalker
+  kind: english-tutoring
+  role: Self-priced online language tutor (Zoom lessons)
+  apply_url: https://www.amazingtalker.com.sg/apply-to-teach
+  india_ok: unclear
+  pay: tutor sets own rate; page says most charge US$15-28 per 50-min lesson and US$6-10 per 25-min trial; variable platform
+    fee (% not shown)
+  requirements:
+  - fluent in language, degree in the field, or native speaker
+  - language teaching experience (1-on-1 or classroom)
+  - stable internet, computer with mic and webcam
+  verified: 'yes'
+  warning: Platform fee percentage not shown on the page
+  notes: Paid monthly on the 2nd via PayPal, TransferWise or Payoneer. Page has no country restriction.
+- id: palfish
+  name: PalFish
+  kind: english-tutoring
+  role: Online English teacher for children (1-on-1)
+  apply_url: https://www.palfish.com/
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'no'
+  warning: Homepage describes lessons by native-speaking teachers, so non-native applicants may be excluded; recruitment terms
+    not seen
+  notes: Opened homepage only; it has no teacher recruitment info. Check the official recruitment page before applying.
+- id: cuemath
+  name: Cuemath
+  kind: academic-tutoring
+  role: Part-time online maths tutor for children (India-based company)
+  apply_url: https://www.cuemath.com/become-a-teacher/
+  india_ok: 'yes'
+  pay: page says top tutors take home more than Rs 1,00,000/month, depending on classes taught
+  requirements:
+  - graduate degree
+  - strong school-level maths
+  - 5-minute spoken-English test
+  - maths test, online teaching interview, training
+  verified: 'yes'
+  warning: Maths only, so a weak fit for an English graduate; earnings figure is marketing
+  notes: India-version page. Joining is free; no charges, deposits or set-up fees. Teaching experience helps but is not required.
+- id: outschool
+  name: Outschool
+  kind: academic-tutoring
+  role: Teach live online classes to kids aged 3-18 (own class topics, e.g. chess)
+  apply_url: https://support.outschool.com/en/articles/1638033-becoming-a-teacher-on-outschool
+  india_ok: 'no'
+  pay: not published (page points to a separate earnings article)
+  requirements:
+  - 18+
+  - live in US, Mexico, Canada, Australia, New Zealand, South Korea, Spain or UK for 6+ months a year
+  - identity verification and criminal background check
+  - PayPal access
+  - 3 Mbps internet
+  verified: 'yes'
+  warning: India is not in the list of eligible teacher countries
+  notes: No degree or teaching credentials required. Background check and ID verification are described as free.
+- id: wyzant
+  name: Wyzant
+  kind: academic-tutoring
+  role: Independent tutor listing, set own hourly rate
+  apply_url: https://support.wyzant.com/hc/en-us/articles/208602236
+  india_ok: 'no'
+  pay: tutor sets own hourly rate; fee/commission not shown on pages opened
+  requirements:
+  - written free response on experience and credentials
+  - profile, photo, rate
+  - agree to Independent Tutor Agreement
+  - optional paid background check (after review)
+  verified: 'yes'
+  warning: A Wyzant FAQ says tutor applicants must be permanent residents of the US currently living in the US
+  notes: Not all applications are accepted; review about 3-10 business days. No degree requirement stated; subjects can be
+    unlocked by a quiz.
+- id: varsity-tutors
+  name: Varsity Tutors
+  kind: academic-tutoring
+  role: Online tutor for K-12 and test prep (Nerdy platform)
+  apply_url: https://www.varsitytutors.com/tutor-applicant
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'no'
+  warning: ''
+  notes: Application page needs JavaScript so no content was seen; nothing could be verified.
+- id: tutor-com
+  name: Tutor.com
+  kind: academic-tutoring
+  role: On-demand online tutor for K-12 and college
+  apply_url: https://www.tutor.com/apply
+  india_ok: 'no'
+  pay: not published (paid on a regular schedule, no invoice)
+  requirements:
+  - applications accepted only from the US (and Puerto Rico)
+  - no degree requirement listed
+  verified: 'yes'
+  warning: US-only applicants
+  notes: Page says it recruits teachers, professors, adjuncts, PhD students and industry professionals.
+- id: tutorme
+  name: TutorMe (Pear Deck Tutor)
+  kind: academic-tutoring
+  role: Online tutor on a live tutoring platform
+  apply_url: https://help.tutorme.com/articles/990289-what-are-the-requirements-to-become-a-tutor
+  india_ok: 'no'
+  pay: not published
+  requirements:
+  - 18+
+  - enrolled in or graduated from an accredited university
+  - 2 years of tutoring or teaching experience
+  - mastery of subjects tutored
+  verified: 'yes'
+  warning: Page lists accepted countries (Brazil, Canada, Colombia, France, Germany, Italy, Mexico, Philippines, Spain, UK,
+    US); India is not among them
+  notes: Page does not mention a background check.
+- id: superprof
+  name: Superprof (India site)
+  kind: marketplace
+  role: List own teaching ads (English, chess) and get student leads
+  apply_url: https://www.superprof.co.in/blog/how-superprof-works/
+  india_ok: 'yes'
+  pay: tutor sets own rate; India English page says teaching can earn more than Rs 600/hr; no commission on earnings
+  requirements:
+  - register and create profile
+  - verify details and upload verifiable qualifications
+  - one teaching ad per subject
+  verified: 'yes'
+  warning: Optional paid pro-pass exists; registration itself is stated as free
+  notes: Chess is not mentioned on the Superprof.com homepage, so check the category on the India site. Cross-border online
+    teaching is implied, not explicitly stated.
+- id: chegg
+  name: Chegg Tutors
+  kind: academic-tutoring
+  role: Online tutor (student-facing tutoring marketplace)
+  apply_url: ''
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'no'
+  warning: ''
+  notes: chegg.com/tutors is student-facing; no tutor hiring terms or apply page seen. Do not rely on this until an official
+    apply page is found.
+- id: skooli
+  name: Skooli
+  kind: academic-tutoring
+  role: Online K-12 tutor, scheduled sessions
+  apply_url: https://help.skooli.com/hc/en-us/articles/115002218503-What-is-the-application-process-like-to-become-a-tutor
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - government photo ID
+  - copy of highest degree or transcripts
+  - teaching licenses/TEFL if any
+  - criminal record check within the past 6 months
+  - video interview
+  verified: 'yes'
+  warning: Applications are not always accepted; criminal record check required
+  notes: Help page does not say which countries are eligible or how tutors are paid.
+- id: studypool
+  name: Studypool
+  kind: academic-tutoring
+  role: Answer student homework questions as an online tutor
+  apply_url: https://www.studypool.com/online-tutor-job
+  india_ok: 'yes'
+  pay: page claims up to $7,500/month; service fees start at 20%; per-question rates not shown
+  requirements:
+  - no degree requirement listed
+  - bidding on student questions
+  verified: 'yes'
+  warning: Page says it accepts tutors from all over the world; earnings claim is marketing and fee takes 20%+
+  notes: Per-question work with no quotas. Question prices shown ($3-$40) may not be what tutors keep.
+- id: chess-com-coaches
+  name: Chess.com Coaches
+  kind: chess-coaching
+  role: Listed chess coach on Chess.com, teach via Classroom or own tools
+  apply_url: https://www.chess.com/become-a-coach
+  india_ok: unclear
+  pay: coach sets own rate (an example listing on the coaches page says 35 EUR per hour); no program fee stated
+  requirements:
+  - verified identity (premium membership or titled-player verification)
+  - established FIDE or national federation rating
+  - About Me section with coaching experience
+  - suitable avatar
+  - good community record
+  verified: 'yes'
+  warning: Coaches are independent, not employees; Chess.com is not involved in coach-student relationships
+  notes: Application form is linked from the article. Approved coaches are auto-listed at chess.com/coaches. No minimum rating
+    stated.
+- id: lichess-coach-directory
+  name: Lichess Coach Directory
+  kind: chess-coaching
+  role: Be listed as a chess coach on Lichess
+  apply_url: https://lichess.org/coach
+  india_ok: unclear
+  pay: coaches set own rates; listings show about $17-35/hr, 17-60 EUR per hour, CHF 120/hr
+  requirements:
+  - NM or FIDE title confirmed through Lichess title verification
+  verified: 'yes'
+  warning: Page says listing requires an NM or FIDE title
+  notes: Page does not say whether Lichess takes a cut of coaching fees.
+- id: chessable-authors
+  name: Chessable (author / course creator)
+  kind: chess-coaching
+  role: Create paid chess courses (possible passive income)
+  apply_url: https://www.chessable.com/teachers/
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'no'
+  warning: ''
+  notes: Page failed to load, so no terms seen. Chessable also has a careers page listed on builtinlondon but it is third-party
+    only.
+- id: chesskid
+  name: ChessKid
+  kind: chess-coaching
+  role: Coach/club tools for chess teachers (not a hiring page)
+  apply_url: https://www.chesskid.com/learn/articles/chesskid-for-coaches-and-clubs
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Page offers tools to coaches and clubs; it does not describe any way to be hired or listed
+  notes: Useful as a teaching tool (30-week lesson planner, club tournaments) for private chess classes, not as an employer.
+- id: chess-gaja
+  name: Chess Gaja
+  kind: chess-coaching
+  role: Online chess coach for children via Zoom and Lichess
+  apply_url: https://chessgaja.com/2025/01/become-a-chess-gaja-coach-your-guide-to-online-chess-coaching-success/
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - FIDE-rated
+  - clear English communication
+  - 50+ Mbps internet, desktop/laptop with webcam
+  - video of an 8-10 minute English calculation lesson plus resume
+  - currently hiring only coaches living in India
+  verified: 'yes'
+  warning: Applications without a valid open-access video are filtered out (per an aggregator listing, which also mentioned
+    a 1400+ FIDE rating, unconfirmed on the official page)
+  notes: Official blog says apply via the careers page on Zoho Recruit or email careers@chessgaja.com. Listed as contract/remote
+    on a third-party board.
+- id: four-knights-chess
+  name: Four Knights Chess
+  kind: chess-coaching
+  role: After-school chess instructor, Bay Area CA and Massachusetts
+  apply_url: https://fourknightschess.com/careers
+  india_ok: unclear
+  pay: not published (competitive hourly pay)
+  requirements:
+  - enjoy working with children aged 5-16
+  - solid chess understanding (need not be a Grandmaster)
+  - reliable and organized
+  verified: 'yes'
+  warning: Page does not mention remote work; locations are US in-person. Its email link pointed to an unusual URL, so type
+    the address yourself
+  notes: Low value for a remote search; included only because it shows US academy expectations.
+- id: upwork
+  name: Upwork
+  kind: marketplace
+  role: Freelance writing, editing, tutoring and chess coaching gigs
+  apply_url: https://support.upwork.com/hc/en-us/articles/24492534968211-Register-as-a-freelancer
+  india_ok: unclear
+  pay: freelancer sets rate; service fee 0-15% depending on work type; Connects needed to submit proposals
+  requirements:
+  - sign up with Apple, Google or email
+  - complete profile (no URLs in title/intro)
+  - buy Connects to bid on most jobs
+  verified: 'yes'
+  warning: Connects cost money; fee is deducted from earnings. Page did not list country eligibility
+  notes: Help page links to a Who is eligible article that was not opened.
+- id: fiverr
+  name: Fiverr
+  kind: marketplace
+  role: Sell gigs such as proofreading, content writing, chess lessons
+  apply_url: https://help.fiverr.com/hc/en-us/articles/360010558598-Creating-your-seller-profile
+  india_ok: unclear
+  pay: not published on the page opened (set own gig prices)
+  requirements:
+  - profile with first name and last initial
+  - clear English without grammar errors in About section
+  - complete new freelancer onboarding tasks
+  - proof of residency only if correcting location
+  verified: 'yes'
+  warning: Do not put contact details or payment info in profile; the fee percentage was not on the page opened
+  notes: Page says profile creation has no fees. Location is set from the country you register in and shown on your profile.
+- id: freelancer-com
+  name: Freelancer.com
+  kind: marketplace
+  role: Bid on freelance writing and editing projects
+  apply_url: https://www.freelancer.com/feesandcharges
+  india_ok: unclear
+  pay: freelancer fee 10% or $5 minimum on fixed-price, 10% on hourly projects
+  requirements:
+  - minimum balance of $20 required before bidding
+  - free members get 6 bids/month
+  verified: 'yes'
+  warning: Needs a held balance to bid; withdrawal fees $1+ and an inactivity fee of up to $14/month apply
+  notes: Page opened is the fees page, not an apply page. Deposits by card cost 2.3% + $0.30.
+- id: contently
+  name: Contently
+  kind: writing-and-editing
+  role: Freelance content writer matched with brand clients
+  apply_url: https://contently.net/about-us/
+  india_ok: unclear
+  pay: not published (links to a Rates Database; paid into account on submitting work, cash out via PayPal)
+  requirements:
+  - portfolio of relevant work
+  - complete a brand-work training tutorial after approval
+  verified: 'yes'
+  warning: ''
+  notes: Page does not mention location restrictions or fees. Approval depends on whether your portfolio fits client needs.
+- id: scribendi
+  name: Scribendi
+  kind: writing-and-editing
+  role: Freelance editor/proofreader for documents
+  apply_url: https://scribendi.com/faq/freelance
+  india_ok: 'yes'
+  pay: not published; paid per order monthly via Payoneer in USD
+  requirements:
+  - university degree in a relevant field
+  - native-level English
+  - 3+ years editing/writing/language teaching experience
+  - 1,000-1,500 words per hour
+  - Microsoft Word 2016+
+  - passes in-house editing test
+  verified: 'yes'
+  warning: Jobs page says the freelance roster is currently full and not accepting applications
+  notes: FAQ welcomes applicants from outside North America; no application or system fees. Experience requirement is a stretch
+    for a new graduate.
+- id: wordvice
+  name: Wordvice
+  kind: writing-and-editing
+  role: Freelance academic editor and proofreader
+  apply_url: https://wordvice.com/career/freelance-editor
+  india_ok: 'yes'
+  pay: not published (per word count and turnaround; applicant states expected rate)
+  requirements:
+  - native English fluency
+  - enrolled in or completed a graduate degree
+  - 2+ years professional editing
+  - APA, AMA, MLA, Chicago knowledge
+  - Word track changes
+  - editing sample test
+  verified: 'yes'
+  warning: Needs a graduate degree (or enrolment) and 2 years of editing, which a BA (Hons) alone may not meet
+  notes: Page says freelancers can work from any location with stable internet and Microsoft Word.
+- id: cactus-communications
+  name: Cactus Communications (Editage)
+  kind: writing-and-editing
+  role: Work-from-home academic editor (India listings)
+  apply_url: https://jobs.cactusglobal.com/jobs/1766?lang=en-us
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - listing shows no requirements
+  - resume submitted through iCIMS talent portal
+  verified: 'yes'
+  warning: Page states Cactus recruiters never ask for money or fees; use only @cactusglobal.com or @talent.icims.eu emails
+  notes: Page title is Editor, Lifesciences (Work-from-home) in India. The roles seen are in-house or contract editing roles.
+- id: reedsy
+  name: Reedsy
+  kind: writing-and-editing
+  role: Book editor, ghostwriter or proofreader on a vetted marketplace
+  apply_url: https://reedsy.com/freelancer/reedsy-selection-criteria/
+  india_ok: unclear
+  pay: not published (platform fees mentioned but rate not stated)
+  requirements:
+  - about 3 years professional experience
+  - 5 recent well-reviewed published books for most roles
+  - proofreaders should know Chicago Manual of Style
+  verified: 'yes'
+  warning: High entry bar; review takes up to 10 days and acceptance is not guaranteed
+  notes: Location is not a stated criterion. Likely a long-term goal, not a first step.
+- id: rev
+  name: Rev
+  kind: writing-and-editing
+  role: Freelance transcriptionist, captioner or subtitle translator
+  apply_url: https://www.rev.com/blog/applying-to-be-a-rev-transcriptionist
+  india_ok: unclear
+  pay: transcription $0.40-$1.10 per audio minute; captions $0.54-$1.10; paid weekly via PayPal
+  requirements:
+  - strong English skills
+  - short skills assessment (grammar, English)
+  - sample transcription submission
+  - computer and reliable internet
+  verified: 'yes'
+  warning: Waitlist due to high application volume; page does not say which countries are accepted
+  notes: No minimum work commitment; no application fees stated.
+- id: outlier
+  name: Outlier (Scale AI)
+  kind: ai-training
+  role: Expert contributor evaluating and writing data for AI models
+  apply_url: https://www.outlier.ai/
+  india_ok: unclear
+  pay: not published (page says competitive pay plus quality-based rewards, paid weekly)
+  requirements:
+  - undergraduate-level domain expertise
+  - valid ID and mobile number from country of residence
+  - current resume and LinkedIn
+  - skills screenings (30-90 min onboarding)
+  verified: 'yes'
+  warning: Page does not list eligible countries; no minimum hours
+  notes: Page mentions contributors in 50 countries. Graduate students and degree holders preferred.
+- id: dataannotation
+  name: DataAnnotation
+  kind: ai-training
+  role: Writing, reasoning and evaluation tasks for AI training
+  apply_url: https://www.dataannotation.tech/
+  india_ok: unclear
+  pay: page cites generalist $25-50/hr and language specialist $25-40/hr; expert rates up to $75-125+/hr (page ranges are
+    inconsistent)
+  requirements:
+  - bachelor's degree or equivalent experience for generalist work
+  - strong writing and critical reasoning
+  - PayPal account for payouts
+  - assessment after applying
+  verified: 'yes'
+  warning: Own FAQ says it never asks for money and charges no signup fees; its pay ranges conflict across pages, so confirm
+    after onboarding
+  notes: FAQ lists red flags (guaranteed income, starter kits). Countries not listed on the page; payouts through PayPal.
+- id: mercor
+  name: Mercor
+  kind: ai-training
+  role: Expert contract work reviewing and improving AI writing
+  apply_url: https://work.mercor.com/
+  india_ok: unclear
+  pay: 'per listing: Writing Expert $75-$100/hr (closed role); India Domestic Tax Specialist $55-$80/hr (closed role)'
+  requirements:
+  - Writing Expert listing sought 10+ years creative writing and a published body of work
+  - weekly pay via Stripe or Wise
+  verified: 'yes'
+  warning: The listings I opened were closed and aimed at senior experts; Mercor says it cannot support H-1B or STEM OPT candidates
+  notes: Roles are project-based independent contractor jobs. Other listings may suit a fresher; check the jobs board.
+- id: telus-digital-ai-community
+  name: TELUS Digital AI Community
+  kind: ai-training
+  role: Part-time remote evaluator/annotator (English, Hindi) for AI projects
+  apply_url: https://jobs.telusdigital.com/search/jobs?cfm5=AI+Community&ns_category=ai-community
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - language proficiency assessments
+  - critical thinking evaluations
+  - CV validation and IP address location check
+  - ID verification
+  - current resume
+  verified: 'yes'
+  warning: Applicants' IP address is checked against stated location; use your real location
+  notes: Page lists 73 AI Community jobs, 9 in India (e.g. Media Search Analyst - English (India)). Roles are part-time and
+    remote.
+- id: crowdgen-appen
+  name: CrowdGen by Appen
+  kind: ai-training
+  role: Crowd contributor on AI data projects (writing, rating, voice)
+  apply_url: https://appen.com/join-our-crowd/
+  india_ok: unclear
+  pay: not published (page aims for above-minimum-wage compensation across markets)
+  requirements:
+  - page lists no formal criteria
+  - apply via Join our Crowd
+  verified: 'yes'
+  warning: Page does not mention fees; pay per task is project-dependent
+  notes: Page says it recruits from all over the world; corporate roles are listed separately.
+- id: alignerr
+  name: Alignerr (Labelbox)
+  kind: ai-training
+  role: Freelance AI trainer for expert-level writing and evaluation
+  apply_url: https://job-boards.greenhouse.io/alignerr/jobs/4600287007
+  india_ok: unclear
+  pay: $30-150/hr for US-based candidates in the listing opened; non-US rates may vary
+  requirements:
+  - listing opened requires a PhD in a listed discipline
+  - professional writing/editing experience
+  - apply through Handshake with education vetting
+  - authorized to work in country of residence
+  verified: 'yes'
+  warning: The listing opened is PhD-level; contract is 1099 with no sponsorship
+  notes: Opened one Greenhouse job on the alignerr board. Other roles may have lower qualification bars.
+- id: toloka
+  name: Toloka AI Tutors
+  kind: ai-training
+  role: Language expert writing and checking text for LLM projects
+  apply_url: https://toloka.ai/blog/ai-tutors
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - pass tests and interviews on language skills, grammar, fact-checking, ethics
+  - write in native language
+  - Responsible AI training
+  verified: 'yes'
+  warning: Page is aimed at businesses hiring tutors; no sign-up steps for tutors described
+  notes: Currently covers 8 world languages per page. Tutor community described as spread worldwide.
+- id: handshake-ai
+  name: Handshake AI Fellowship
+  kind: ai-training
+  role: Contract AI trainer matched to projects (writing, humanities)
+  apply_url: https://support.joinhandshake.com/hc/en-us/articles/32244754462615-Apply-to-the-Handshake-AI-Fellowship
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - create Handshake account
+  - phone verification
+  - answer work-authorization questions
+  - upload resume and complete profile
+  - identity verification and payout setup before project work
+  verified: 'yes'
+  warning: Sign-up asks whether you are legally authorized to work in the United States and about CPT/OPT/H-1B
+  notes: Article last updated July 31, 2026. You wait to be matched to a project after applying.
+- id: micro1
+  name: micro1
+  kind: ai-training
+  role: Domain expert for AI training projects (apply to open roles)
+  apply_url: https://www.micro1.ai/experts
+  india_ok: 'yes'
+  pay: not published (hourly rate; referrals up to $3,000)
+  requirements:
+  - domain expertise (linguistics among listed fields)
+  - no prior AI experience required
+  - AI interview with the bot Zara
+  - residence not in an excluded country
+  verified: 'yes'
+  warning: ''
+  notes: Page says it hires globally except listed countries (e.g. China, Russia, Iran); India is not excluded.
+- id: prolific
+  name: Prolific (participant)
+  kind: ai-training
+  role: Paid online research studies (survey-style tasks)
+  apply_url: https://participant-help.prolific.com/en/articles/445006-how-do-i-become-a-participant-on-prolific
+  india_ok: unclear
+  pay: not published on the page opened
+  requirements:
+  - register and join waitlist
+  - verify email, mobile and ID document
+  - complete practice study
+  - fill About You page
+  verified: 'yes'
+  warning: Not a career; page does not state eligibility by country
+  notes: Waitlist invite required; most people are added. Pay and eligibility articles were not opened.
+- id: welocalize
+  name: Welocalize (AI rater roles)
+  kind: ai-training
+  role: Freelance AI data rater for English (India) projects
+  apply_url: ''
+  india_ok: 'yes'
+  pay: not published (an aggregator listing, removed May 2025, quoted $4/hr)
+  requirements:
+  - aggregator listing asked for C2 English, search or e-commerce experience, NDA, quality test
+  verified: 'no'
+  warning: Aggregator listing quoted only $4/hr for India; official page not opened
+  notes: Only a third-party builtin.com listing was seen (hiring in India, 5-15 hrs/week). No official Welocalize page was
+    opened.
+- id: surge-ai
+  name: Surge AI
+  kind: ai-training
+  role: Corporate careers at Surge AI (mostly remote; not the contributor gig)
+  apply_url: https://surgehq.ai/careers
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Careers page lists staff roles (research, engineering, finance); it does not mention DataAnnotation
+  notes: About 60 openings, most tagged Remote. No application steps on the main page; each role has its own page.
+- id: automattic
+  name: Automattic
+  kind: remote-company
+  role: Remote Happiness/support, content and other roles at WordPress.com maker
+  apply_url: https://automattic.com/work-with-us/
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - resume, cover letter and application questions
+  - skills assessment
+  - text or video interview
+  - trial project of up to 20 hours or code test
+  verified: 'yes'
+  warning: Page warns scammers pose as Automattic recruiters; real contact is only from an @automattic.com address
+  notes: Calls itself remote-first; page states no location restrictions. Jobs board is automattic.com/jobs.
+- id: gitlab
+  name: GitLab
+  kind: remote-company
+  role: Remote roles at an all-remote company (mostly tech/support)
+  apply_url: https://about.gitlab.com/jobs/all-jobs/
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - varies by role
+  verified: 'yes'
+  warning: ''
+  notes: Greenhouse board shows 221 jobs including Bangalore and Remote roles in many countries. No content or writing roles
+    seen in the excerpt.
+- id: zapier
+  name: Zapier
+  kind: remote-company
+  role: Remote-first company with support and content roles
+  apply_url: https://zapier.com/jobs
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: ''
+  notes: Page says remote-first since 2011 and employees are spread around the globe. Job board jobs.ashbyhq.com/zapier needs
+    JavaScript so listings were not seen.
+- id: doist
+  name: Doist
+  kind: remote-company
+  role: Remote team (Todoist, Twist) hiring across functions
+  apply_url: https://doist.com/careers
+  india_ok: 'yes'
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Page showed no open roles when fetched
+  notes: Page says Doisters can work from anywhere in the world with no location restrictions. Board is at apply.workable.com/doist.
+- id: medium
+  name: Medium
+  kind: remote-company
+  role: Roles at Medium (editorial/content roles possible)
+  apply_url: https://medium.com/jobs-at-medium
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: The only role seen, Staff Product Designer, is Remote - US
+  notes: Openings hosted on Greenhouse at job-boards.greenhouse.io/medium. Page states no remote policy.
+- id: substack
+  name: Substack
+  kind: remote-company
+  role: Roles at Substack (many employees work remotely)
+  apply_url: https://substack.com/jobs
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: ''
+  notes: Page mentions work-from-home allowance but gives no location policy; Ashby board substack could not be rendered without
+    JavaScript.
+- id: coursera
+  name: Coursera
+  kind: remote-company
+  role: EdTech careers (content, support, product); remote status unclear
+  apply_url: https://careers.coursera.com/
+  india_ok: 'yes'
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Board shows location-specific roles (India, Canada, US, others); no listing mentioned remote work
+  notes: Board job-boards.greenhouse.io/coursera showed 17 openings, 6 with India location text. Page did not state a remote
+    policy.
+- id: duolingo
+  name: Duolingo
+  kind: remote-company
+  role: Language-learning company careers (content/learning roles)
+  apply_url: https://careers.duolingo.com/
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'no'
+  warning: ''
+  notes: Careers page needs JavaScript; no location policy or job list seen.
+- id: chess-com-careers
+  name: Chess.com Careers
+  kind: remote-company
+  role: Employee roles at Chess.com (global remote team)
+  apply_url: https://www.chess.com/jobs
+  india_ok: unclear
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Open roles load dynamically and were not seen
+  notes: Page calls itself a global remote team of 650+ people in 60+ countries; benefits vary by where you live and how you
+    are hired.
+- id: ai-outlier
+  name: Outlier (Scale AI)
+  kind: ai-training
+  role: Expert contributor writing and rating data for AI models
+  apply_url: https://app.outlier.ai/opportunities
+  india_ok: unclear
+  pay: not published (page says competitive pay plus quality-based rewards, paid weekly)
+  requirements:
+  - undergraduate-level domain expertise (graduate students and degree holders preferred)
+  - valid ID and mobile number from country of residence
+  - current resume and LinkedIn profile
+  - 30-90 min onboarding with skill screenings, then project-specific onboarding
+  verified: 'yes'
+  warning: Page gives no country list and no minimum hours; work after a project ends depends on new projects. I did not verify
+    worker complaints, so check recent community reports before relying on it.
+  notes: Opened outlier.ai home (links to /faq, app.outlier.ai/opportunities); the FAQ itself could not be opened. Page cites
+    experts in 50 countries.
+- id: ai-dataannotation
+  name: DataAnnotation
+  kind: ai-training
+  role: Writing, rating and reasoning tasks for AI training (General track suits English graduates)
+  apply_url: https://www.dataannotation.tech/
+  india_ok: unclear
+  pay: 'FAQ: General $25-50+/hr (another line says $25-30+), Multilingual $20+, Coding $40-150+, STEM/Professional $40-125+;
+    ranges are inconsistent on the page'
+  requirements:
+  - 'General track: bachelor''s degree or equivalent experience, strong writing and critical thinking'
+  - fluent English, reliable internet
+  - one-time Starter Assessment (about 1 hour; cannot be retaken)
+  - Persona ID check (government photo ID plus selfie)
+  - PayPal account for payouts
+  verified: 'yes'
+  warning: FAQ says it never asks for money, starter kits or signup fees (red flags it lists itself). A Glassdoor review title
+    I saw (not opened) complains of poor communication and payment issues; work is not guaranteed after you pass.
+  notes: Opened /faq. India is not mentioned either way. Payouts via PayPal usually within a few days. Surge AI is widely
+    reported to own it but I did not confirm that on an official page.
+- id: ai-surge-ai-contributor
+  name: Surge AI (contributor side)
+  kind: ai-training
+  role: Contributor work is run through DataAnnotation (see ai-dataannotation)
+  apply_url: https://www.dataannotation.tech/
+  india_ok: unclear
+  pay: see ai-dataannotation
+  requirements:
+  - see ai-dataannotation
+  verified: 'no'
+  warning: Surge's own careers page (surgehq.ai/careers) lists staff roles only; do not look for contributor work there.
+  notes: Link between Surge AI and DataAnnotation is from public reporting, not confirmed on a page I opened. Kept so the
+    tracker has a Surge entry that points to the right form.
+- id: ai-alignerr
+  name: Alignerr (Labelbox)
+  kind: ai-training
+  role: Freelance AI trainer; language SME, transcription and expert roles
+  apply_url: https://www.alignerr.com/jobs
+  india_ok: 'yes'
+  pay: 'listed roles: language SME/lead $15-35/hr, transcriptionist $10-35/hr, healthcare AI reviewer $15-20/hr; page header
+    says up to $150/hr but no listed role showed it'
+  requirements:
+  - native or fluent in the role's language
+  - some lead/SME roles want language-quality experience
+  - some transcription roles say no experience needed
+  - application and ID vetting via app.alignerr.com
+  verified: 'yes'
+  warning: FAQ has a question titled 'account was deactivated and I was not paid for completed work' (answer not visible),
+    so ask about pay and deactivation before investing hours. None of the 60 roles shown was an English writing role.
+  notes: 'India-based roles seen: Marathi SME (Mumbai, Nagpur, Pune), Telugu SME (Hyderabad), Tamil SME (Chennai). 5,678 roles
+    total, only 60 visible; a ''General'' category was not inspected. Earlier evergreen.yaml entry ''alignerr'' covers a PhD-level
+    Greenhouse listing.'
+- id: ai-mercor-generalist
+  name: Mercor - Generalist Expert (standing listing)
+  kind: ai-training
+  role: Prompt and reference-answer writing, grading model output
+  apply_url: https://work.mercor.com/jobs/list_AAABoKORCF2dakrez4FCAo_G/generalist-expert
+  india_ok: unclear
+  pay: $40-70/hr, set per project
+  requirements:
+  - careful reading and sound judgment from any professional or academic background
+  - clear written communication
+  - no specific credential
+  - confirm where you work from at application
+  verified: 'yes'
+  warning: Standing listing gives no accept/reject decision; Mercor contacts you only when a project matches, which can take
+    a week or several months. Cannot support H-1B or STEM OPT.
+  notes: Page does not mention India. Independent contractor, fully remote.
+- id: ai-mercor-student-india
+  name: Mercor - Student, India (closed listing)
+  kind: ai-training
+  role: LLM output evaluation for an AI lab (students at Indian universities)
+  apply_url: https://work.mercor.com/jobs/list_AAABmjN59H3XEeSkiZdALoZj/student-india
+  india_ok: 'yes'
+  pay: $14-20/hr, hourly contract, about 5-10 hrs/week, paid weekly via Stripe or Wise
+  requirements:
+  - currently enrolled undergraduate or Master's student at an accredited Indian university
+  - strong written and verbal English
+  - experience using AI tools/LLMs
+  - resume plus short overview of AI-tool experience; maybe a short evaluation task
+  verified: 'yes'
+  warning: Listing said it was no longer accepting applications. You qualify only while still enrolled (before the 2027 degree
+    is awarded), so watch for a repost.
+  notes: Best-matching India-specific listing found for a current student. Mercor also lists cricket and other India-region
+    evaluator roles in search results (not opened).
+- id: ai-telus-india-rater
+  name: TELUS Digital AI Community - QA Rater English (India)
+  kind: ai-training
+  role: Part-time remote rater of search and AI-generated content
+  apply_url: https://jobs.telusdigital.com/jobs/17840908-quality-assurance-rater-english-india
+  india_ok: 'yes'
+  pay: 8 USD/hr, paid per completed task
+  requirements:
+  - freelancer with excellent English
+  - resident in India for the last 5 consecutive years
+  - familiar with business, media, news, social media and cultural affairs
+  - broadband, smartphone and personal computer
+  - project training and qualification assessments
+  verified: 'yes'
+  warning: Ongoing work depends on quality reviews. Applicant IP address is checked against stated location (noted in evergreen.yaml
+    entry telus-digital-ai-community).
+  notes: Page did not state whether the role is open; it showed an Apply button and no closing date. AI Community board had
+    73 jobs, 9 India, 27 English, 2 Hindi.
+- id: ai-crowdgen-india-projects
+  name: CrowdGen by Appen - India projects
+  kind: ai-training
+  role: English content reviewer and annotator on project-specific pages (eg Project Heather)
+  apply_url: https://crowdgen.com/heather-en-in/
+  india_ok: 'yes'
+  pay: Project Heather page lists $2/hr (depending on state); an old banner shows $38.80/hr double pay with an October 2024
+    deadline, which conflicts and looks outdated
+  requirements:
+  - live in India
+  - native-level English
+  - strong understanding of Indian cultural context
+  - at least 5 hrs/week; 40 tasks over two weeks
+  - apply through Lever, pass qualification tests, verify identity
+  verified: 'yes'
+  warning: Very low pay for this project. Page says generative AI tools are prohibited for most projects. Do not accept the
+    stale banner rate.
+  notes: Other crowdgen.com project pages for India appeared in search (Uolo, Coffee, Oak, Saffron) but were not opened. The
+    main app.crowdgen.com/apply page is JavaScript-only. General portal entry is crowdgen-appen in evergreen.yaml.
+- id: ai-welo-ai-trainers-network
+  name: Welo Data - AI Trainers Network
+  kind: ai-training
+  role: Remote AI trainer/rater in an Indian language or English (India)
+  apply_url: https://jobs.lever.co/weloglobal
+  india_ok: 'yes'
+  pay: not published; paid per completed task, rates vary by task type and are shown in a dashboard after approval
+  requirements:
+  - computer or laptop, stable internet, modern browser
+  - apply to a role, then create a Welo Works account
+  - language and cultural assessment, then a task-related qualification exam
+  - set up payment details and sign agreement after approval
+  verified: 'yes'
+  warning: Genuine contact only from @welocalize.com, @weloglobal.com, @hire.lever.co or @welodata.ai; it says it never asks
+    for fees or equipment purchases. An older third-party listing quoted about $4/hr for India raters (unverified).
+  notes: Lever board had 209 listings; 22 India-related including 'AI Trainers Network - English (India)' (Remote, India),
+    Hindi, Bengali, Gujarati, Tamil, Telugu and others. Matches the older evergreen.yaml entry welocalize, which had no apply
+    URL.
+- id: ai-imerit-scholars
+  name: iMerit Scholars
+  kind: ai-training
+  role: Invite-only expert network (linguists, humanities, domain experts) for LLM fine-tuning
+  apply_url: https://join-scholars.imerit.net/
+  india_ok: unclear
+  pay: not published ('well paid'; 'we pay on time')
+  requirements:
+  - graduate-level or higher qualifications per iMerit's own blog
+  - domain or language expertise shown in project table (MA, MSc, PhD)
+  - pre-register via external form
+  verified: 'yes'
+  warning: A BA is below the stated graduate-level bar, so expect it to suit you after a Master's. Page mentions no fees or
+    warnings.
+  notes: iMerit's main careers page (imerit.ai/careers-listing) loads roles via JavaScript; CV can go to careers@imerit.net.
+    Offices in Bengaluru and Kolkata.
+- id: ai-taskus
+  name: TaskUs (careers)
+  kind: other
+  role: BPO/AI-services employer with India sites; AI data roles appear occasionally
+  apply_url: https://jobs.taskus.com/
+  india_ok: 'yes'
+  pay: not published
+  requirements:
+  - varies by role; the AI Data Quality Lead listing needed 3+ years in data quality
+  verified: 'yes'
+  warning: Many roles are onsite and shift-based. The only AI listing I opened was closed and senior. TaskUs says it never
+    asks for payment.
+  notes: 439 positions; India filter covers Chennai, Gurugram, Indore, Mohali, Navi Mumbai and Noida. Not a gig platform.
+- id: ai-scale-ai-corporate
+  name: Scale AI (corporate careers)
+  kind: other
+  role: Staff roles only; contributor work is via Outlier
+  apply_url: https://job-boards.greenhouse.io/scaleai
+  india_ok: 'no'
+  pay: not published
+  requirements: []
+  verified: 'yes'
+  warning: Board had 183 jobs, none in India and none in content or AI-trainer functions.
+  notes: Greenhouse slug scaleai confirmed from an Apply link. See ai-outlier for contributor work.
+- id: ai-invisible-technologies
+  name: Invisible Technologies
+  kind: ai-training
+  role: Advanced AI trainer / expert contract roles (mostly technical) and staff roles
+  apply_url: https://invisibletech.ai/join-us
+  india_ok: unclear
+  pay: not published on pages opened
+  requirements:
+  - trainer roles seen on aggregators wanted software-development expertise
+  - each role has its own Greenhouse application
+  verified: 'yes'
+  warning: Only a redirect from invisible.co/join-us was seen for the careers page; the EU Greenhouse board (invisibletech,
+    18 jobs) was opened. Its only India role was a contract SRE. Do not expect an English-writing role.
+  notes: invisible.co/agents redirected to meridial.ai, which I could not open. A March 2026 press release is datelined San
+    Francisco and Bengaluru.
+- id: ai-oneforma-centific
+  name: OneForma (Centific)
+  kind: ai-training
+  role: Micro-task and language/rating marketplace
+  apply_url: https://www.oneforma.com/help-center/general-inquiries/how-to-get-started/
+  india_ok: unclear
+  pay: not published on pages opened; third-party tracker found $20/hr on 1 of 34 listings and called OneForma pay commodity-level
+  requirements:
+  - email account and verification
+  - complete profile with country, languages, education
+  - identity verification, passkey and payment method on dashboard
+  - apply per listing before the deadline
+  verified: 'yes'
+  warning: Help page does not say which countries are supported. It links a 'Fraud and Scam Awareness' page I did not read.
+    Pay claims here are third-party.
+  notes: Registration at my.oneforma.com (seen in search). The official jobs page could not be opened.
+- id: ai-rws-trainai
+  name: RWS TrainAI Community
+  kind: ai-training
+  role: Freelance data tasks and evaluation; rolling talent pool
+  apply_url: https://www.rws.com/artificial-intelligence/train-ai-data-services/trainai-community/
+  india_ok: unclear
+  pay: per completed task, varies by project, shared in advance; paid by PayPal or direct bank deposit
+  requirements:
+  - 18 or older
+  - Windows or Mac computer, high-speed internet, latest Chrome
+  - no experience needed to start
+  - extra training and tests unlock more work
+  verified: 'yes'
+  warning: Joining is free and RWS says it never asks for payment; trust only rws.com or moravia.com addresses. Its Lever
+    board had no India-located roles (Indian-language evaluator roles sat in North America).
+  notes: 'Lever board (slug rws) had 76 postings including one rolling ''Join our global TrainAI talent pool''. Questions:
+    AICommunity@rws.com.'
+- id: ai-lionbridge-ai
+  name: Lionbridge AI community
+  kind: ai-training
+  role: Freelance AI training, rating and linguistic work
+  apply_url: https://ai-opportunities.lionbridge.com/register
+  india_ok: unclear
+  pay: not published ('competitive rates')
+  requirements:
+  - page lists no formal criteria
+  - language and domain expertise help
+  - listings on careers.lionbridge.com
+  verified: 'yes'
+  warning: Genuine recruiters use @lionbridge.com only and interview on Microsoft Teams; Telegram or Messenger interviews,
+    gift cards or requests for bank/PayPal details are red flags.
+  notes: Join page shows member profiles from India (Gujarat, Allahabad) but gives no India-specific terms.
+- id: ai-mindrift-toloka
+  name: Mindrift (Toloka)
+  kind: ai-training
+  role: Independent AI tutor/contributor; all-access tasks plus specialised projects
+  apply_url: https://mindrift.ai/apply
+  india_ok: unclear
+  pay: specialised projects $15 to $100+/hr per page; all-access tasks lower; fixed reward shown per task; paid twice monthly
+    (5th and 20th) via Payoneer or Tipalti
+  requirements:
+  - all-access tasks open to anyone
+  - 'specialised projects: relevant degree and experience, CV, assessments, ID verification'
+  - about 70% of contributors hold Master's or PhD per page
+  - some sensitive-content projects need 21+
+  verified: 'yes'
+  warning: Paid only for accepted tasks, with downtime between projects. Eligibility and geographic restrictions live on a
+    separate page I did not open.
+  notes: Evergreen.yaml entry toloka covers the business-facing Toloka tutor page.
+- id: ai-prolific
+  name: Prolific (participant)
+  kind: other
+  role: Paid research studies; not career work
+  apply_url: https://participant-help.prolific.com/en/articles/445006-how-do-i-become-a-participant-on-prolific
+  india_ok: 'yes'
+  pay: not published on the page opened
+  requirements:
+  - over 18 with a created and verified account
+  - eligibility based on where you currently live
+  verified: 'yes'
+  warning: Same page says Prolific is open to most OECD countries yet also says India is on the country list, so confirm at
+    sign-up. Waitlist applies (see evergreen.yaml prolific).
+  notes: Opened the 'Who can participate' article.
+- id: ai-remotasks
+  name: Remotasks (Scale AI)
+  kind: ai-training
+  role: Task-based annotation and RLHF-style evaluation
+  apply_url: https://www.remotasks.com/
+  india_ok: unclear
+  pay: 'third-party review: image/video $3-15/hr, text $5-18/hr, RLHF evaluation $15-40/hr, new workers about $5-10/hr effective;
+    paid weekly via PayPal, Payoneer or AirTM'
+  requirements:
+  - qualification exams for better-paid tasks
+  verified: 'no'
+  warning: I only opened a third-party review (aigigjobs.com), not remotasks.com. It says rejected work goes unpaid, task
+    supply swings, and higher-end work has moved to Outlier. Low priority for an English graduate.
+  notes: Official site not opened.
+- id: ai-shaip-community
+  name: Shaip Collaborate (freelance community)
+  kind: ai-training
+  role: Remote part-time data tasks (audio, labeling, search evaluation, content moderation)
+  apply_url: https://collaborate.shaip.com/
+  india_ok: unclear
+  pay: not published; weekly payouts and performance bonuses claimed
+  requirements:
+  - email sign-up
+  - registration, task qualification and possible skill assessments
+  - reliable internet
+  verified: 'yes'
+  warning: Page says joining is free; its figures (500K contributors, $7.5M paid) are company claims. Page lists Indic voice
+    projects but never confirms India eligibility.
+  notes: Shaip's corporate board lists 6 roles, 4 in Ahmedabad, none content or writing.
+- id: ai-sama-data-agent
+  name: Sama - Data Training Agent
+  kind: ai-training
+  role: Annotation agent after the AI 101 course
+  apply_url: https://www.sama.com/ai101
+  india_ok: unclear
+  pay: not published
+  requirements:
+  - complete the AI 101 course, then apply as Data Training Agent
+  verified: 'yes'
+  warning: Agent sites listed are Kenya, Uganda and Costa Rica, not India. Greenhouse board (samainc) had 3 jobs, two Associate
+    roles in Bangalore.
+  notes: 'Page opened: sama.com/careers.'
+- id: ai-turing-llm-trainer
+  name: Turing - LLM Trainer
+  kind: ai-training
+  role: Python/coding-focused LLM trainer
+  apply_url: https://www.turing.com/jobs/remote-python-llm-trainer-jobs
+  india_ok: unclear
+  pay: not published; salary expectation asked during profile setup
+  requirements:
+  - 3+ years software development and 1-3 years Python
+  - 'three tests: seniority, tech stack, live coding'
+  verified: 'yes'
+  warning: FAQ says openings are only for developers, so skip unless you code.
+  notes: Listed so the tracker does not keep surfacing it.

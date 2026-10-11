@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Add company · {{ profile_name }}{% endblock %}
+{% block content %}
+<div class="crumb"><a href="/companies">Companies</a> / Add</div>
+<h1>{{ comp.name }}</h1>
+<p class="sub">{{ note }}</p>
+
+<dl class="kv">
+  <dt>Source</dt><dd>{{ comp.source_type }}</dd>
+  <dt>Endpoint</dt><dd style="word-break:break-all">{{ comp.slug_or_endpoint }}</dd>
+  <dt>Careers page</dt><dd style="word-break:break-all">{{ comp.careers_url }}</dd>
+  {% if preview %}
+    <dt>Test fetch</dt><dd>{{ preview.total }} open jobs found, {{ preview.in_scope }} fit the roles and locations you set</dd>
+    {% if preview.sample %}<dt>Examples</dt><dd>{{ preview.sample | join(' · ') }}</dd>{% endif %}
+  {% elif err %}
+    <dt>Test fetch</dt><dd>Failed: {{ err }}</dd>
+  {% else %}
+    <dt>Test fetch</dt><dd>Not available for this source type yet</dd>
+  {% endif %}
+</dl>
+
+<form method="post" action="/companies/save" style="margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+  <input type="hidden" name="name" value="{{ comp.name }}">
+  <input type="hidden" name="source_type" value="{{ comp.source_type }}">
+  <input type="hidden" name="slug_or_endpoint" value="{{ comp.slug_or_endpoint }}">
+  <input type="hidden" name="careers_url" value="{{ comp.careers_url }}">
+  <select name="pay_tier"><option value="">Pay tier (optional)</option><option>T1</option><option>T2</option><option>T3</option></select>
+  <button class="btn solid" type="submit">Save company</button>
+  <a class="btn quiet" href="/companies">Cancel</a>
+</form>
+{% endblock %}

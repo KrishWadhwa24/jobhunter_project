@@ -1,0 +1,60 @@
+# Your standard answers for application forms. The auto-fill worker reads ONLY this file (plus the contact
+# details in resume_facts.yaml). Edit any value any time; the next Apply uses it.
+#
+# If a form asks something that is not covered here (and it is required), the worker leaves the field empty,
+# tells you on Telegram exactly which question it is, and keeps Chrome open for you to finish.
+# It never clicks the final Submit and never ticks consent / terms checkboxes: those stay yours.
+
+personal:
+  first_name: Krish
+  last_name: Wadhwa
+  full_name: Krish Wadhwa
+  email: krishwadhwa2005@gmail.com
+  phone: "7017111529"               # 10 digits, as most Indian forms want it
+  phone_full: "+91 7017111529"
+  phone_country: India
+  city: Bengaluru
+  state: Karnataka
+  country: India
+  location: "Bengaluru, Karnataka, India"
+  pincode: ""                         # fill in if you want postal-code fields answered
+  address: ""                         # optional street address
+  linkedin: "https://linkedin.com/in/krish-wadhwa-815680235"
+  github: "https://github.com/KrishWadhwa24"
+  portfolio: "https://trade-nexus-smoky.vercel.app"
+
+education:
+  school: Jaypee Institute of Information Technology
+  degree: "Bachelor of Technology (B.Tech)"
+  field: Computer Science and Engineering
+  grad_year: "2027"
+  grad_month: "May"
+  grad_date_iso: "2027-05-31"          # used for date boxes that ask for a graduation date
+  cgpa: "8.8"
+  cgpa_scale: "10"
+
+work:
+  current_company: MoveInSync
+  current_title: Software Development Engineer Intern
+  years_experience: "0"               # full-time years; internships do not count here
+  notice_period: "Available to join from June 2027, after graduation"
+  earliest_start: "June 2027"
+  start_date_iso: "2027-06-01"        # used for date boxes that ask when you can start
+  expected_ctc: "As per company standards / negotiable"
+  current_ctc: ""                     # empty = the worker asks you instead of guessing
+  relocate: "Yes"
+  work_authorization: "Yes"           # authorised to work in India
+  sponsorship: "No"                   # no visa sponsorship needed
+  how_heard: "Company careers page"
+  referral: "No"                      # "were you referred by an employee?"
+  previously_applied: "No"            # applied to / worked at this company before
+  over_18: "Yes"
+
+# Your own rules, checked BEFORE the built-in ones. First match wins.
+#   match:  a regular expression tested (case-insensitive) against the question text
+#   answer: what to type or choose
+rules:
+  - match: "willing to work (in|from) (the )?office"
+    answer: "Yes"
+  - match: "(preferred|desired) (work )?location"
+    answer: "Bengaluru"

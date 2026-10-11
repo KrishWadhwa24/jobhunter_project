@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}{{ job.title }} · {{ profile_name }}{% endblock %}
+{% block content %}
+<div class="crumb"><a href="/">Jobs</a> / {{ job.company }}</div>
+<h1>{{ job.title }}</h1>
+<p class="sub">{{ job.company }} · {{ job.location or 'Location not stated' }}</p>
+
+{% if applying and not application %}
+<div class="flash"><strong>Saved under In progress.</strong> {% if remote %}Preparing your resume for this job&hellip;{% else %}Starting the application&hellip;{% endif %}</div>
+{% endif %}
+
+<div class="btnrow">
+  <a class="btn" href="{{ job.url }}" target="_blank" rel="noopener">Open posting</a>
+  <form class="inline" method="post" action="/job/{{ job.id }}/action/apply"><input type="hidden" name="next" value="/job/{{ job.id }}"><button class="btn solid" type="submit">Apply</button></form>
+  <form class="inline" method="post" action="/job/{{ job.id }}/action/referrers"><button class="btn" type="submit">Find referrers</button></form>
+  <form class="inline" method="post" action="/job/{{ job.id }}/action/applied"><input type="hidden" name="next" value="/"><button class="btn" type="submit">Already applied</button></form>
+  <form class="inline" method="post" action="/job/{{ job.id }}/action/skip"><input type="hidden" name="next" value="/"><button class="btn quiet" type="submit">Hide</button></form>
+</div>
+
+{% if application %}
+{% set rep = application.report or {} %}
+<h2>Application</h2>
+<div class="card">
+{% if apply_running or application.status in ('queued', 'tailoring', 'filling') %}
+  <h3>{% if application.status == 'filling' %}Filling the form in Chrome&hellip;{% elif application.status == 'tailoring' %}Tailoring your resume&hellip;{% else %}Starting&hellip;{% endif %}</h3>
+  <p>A Chrome window opens on your Mac. Leave it alone until it finishes; this takes under a minute.</p>
+  <script>setTimeout(function(){ location.reload(); }, 4000);</script>
+{% elif application.status == 'failed' %}
+  <h3>Could not auto-fill this one</h3>
+  <p>{{ application.error or (rep.notes | join(' ')) or 'Unknown error.' }}</p>
+  <div class="btnrow">
+    <a class="btn solid" href="{{ job.url }}" target="_blank" rel="noopener">Open application page</a>
+    <form class="inline" method="post" action="/job/{{ job.id }}/autofill"><button class="btn" type="submit">Try again</button></form>
+  </div>
+{% else %}
+  <h3>{% if application.status == 'ready' %}Form filled. Your turn.{% else %}Filled what I could. I need you for the rest.{% endif %}</h3>
+  <p>{{ rep.filled | length }} fields filled{% if rep.resume_uploaded %}, tailored resume attached{% endif %}. The form is open in the Chrome window on your Mac. Review it and press Submit yourself, then press Already applied.</p>
+  {% if rep.needs %}<p><strong style="color:var(--ink)">Still to do</strong></p>
+  <div class="events">{% for n in rep.needs %}<div>{{ n.label }}{% if n.why %} &middot; {{ n.why }}{% endif %}</div>{% endfor %}</div>{% endif %}
+  {% for n in rep.notes %}<p>{{ n }}</p>{% endfor %}
+  {% if rep.drafts %}<p><strong style="color:var(--ink)">Drafted answers: read before you submit</strong></p>
+  {% for d in rep.drafts %}<div class="card" style="margin:8px 0"><div class="muted" style="margin-bottom:6px">{{ d.label }} &middot; written by {{ d.how }} from your facts</div><div class="draft">{{ d.text }}</div></div>{% endfor %}{% endif %}
+  {% if rep.steps %}<p class="muted">{{ rep.steps | length }} later step(s) were filled after you moved on in the form.</p>{% endif %}
+  {% if rep.filled %}<details style="margin-top:8px"><summary class="muted">What I filled</summary>
+  <div class="events">{% for f in rep.filled %}<div>{{ f.label }}{% if f.value %} &middot; {{ f.value }}{% endif %}</div>{% endfor %}</div></details>{% endif %}
+  <div class="btnrow">
+    <a class="btn solid" href="{{ rep.final_url or job.url }}" target="_blank" rel="noopener">Open application page</a>
+    {% if rep.cover_pdf %}<a class="btn" href="/job/{{ job.id }}/cover.pdf">Download cover letter</a>{% endif %}
+    <form class="inline" method="post" action="/job/{{ job.id }}/autofill"><button class="btn" type="submit">Fill again</button></form>
+  </div>
+{% endif %}
+</div>
+{% endif %}
+
+{% if resume %}
+{% set ats = (resume.details or {}).get('ats') or {} %}
+<h2>Tailored resume</h2>
+<div class="card">
+{% if resume_running or resume.status == 'working' %}
+  <h3>Tailoring your resume&hellip;</h3>
+  <p>Reading the posting, choosing your most relevant true experience and scoring it. This takes a few seconds.</p>
+  <script>setTimeout(function(){ location.reload(); }, 4000);</script>
+{% elif resume.status == 'failed' %}
+  <h3>Could not tailor a resume</h3>
+  <p>{{ resume.error or 'Unknown error.' }}</p>
+  <form class="inline" method="post" action="/job/{{ job.id }}/tailor"><button class="btn" type="submit">Try again</button></form>
+{% else %}
+  <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
+    <span style="font-size:40px;font-weight:650;letter-spacing:-0.03em">{{ '%.1f' | format(resume.score) }}</span>
+    <span class="muted">/ 100 ATS match</span>
+    <span class="tag">{% if resume.target_reached %}95 target reached{% else %}Below 95: honest best from your facts{% endif %}</span>
+  </div>
+  <p style="margin-top:10px">Keywords {{ ((ats.coverage or 0) * 100) | round | int }}% matched &middot; format {{ ats.format_points }}/12 &middot; title fit {{ ats.title_points }}/8</p>
+  {% if ats.matched %}<div class="facts" style="margin:6px 0 10px">{% for t in ats.matched %}<span class="tag">{{ t }}</span>{% endfor %}</div>{% endif %}
+  {% if ats.missing %}<p><strong style="color:var(--ink)">Missing:</strong> {{ ats.missing | join(', ') }}</p>{% endif %}
+  {% for n in (resume.details or {}).get('notes', []) %}<p>{{ n }}</p>{% endfor %}
+  <div class="btnrow">
+    <a class="btn solid" href="/job/{{ job.id }}/resume.pdf">Download PDF</a>
+    <a class="btn" href="/job/{{ job.id }}/resume.docx">Download Word</a>
+    <form class="inline" method="post" action="/job/{{ job.id }}/tailor"><button class="btn quiet" type="submit">Tailor again</button></form>
+  </div>
+  {% if remote %}<div class="btnrow"><a class="btn solid" href="{{ job.url }}" target="_blank" rel="noopener">Open posting and apply</a></div>
+  <p style="font-size:14px">Open the posting, upload this resume there and submit. Then come back and press Already applied.</p>{% endif %}
+  <p style="margin-top:12px;font-size:14px">The score is a keyword-and-format check, not a real ATS number. Only lines from your master resume are used; nothing is invented to raise it.</p>
+{% endif %}
+</div>
+{% endif %}
+
+<dl class="kv">
+  <dt>Level</dt><dd>{{ job.level | level }}{% if flags.level_source %} <span class="muted">(from {{ flags.level_source }})</span>{% endif %}</dd>
+  <dt>Fit score</dt><dd>{{ job.score }} / 100 · {{ job.verdict }}</dd>
+  <dt>Why</dt><dd>{{ (job.reasons | jsonload) | join(' · ') or '—' }}</dd>
+  {% if flags.years is not none and flags.years is defined %}<dt>Experience asked</dt><dd>{{ flags.years }}+ years{% if flags.non_internship_years %} (excluding internships){% endif %}</dd>{% endif %}
+  {% if flags.batch and flags.batch.years %}<dt>Batches mentioned</dt><dd>{{ flags.batch.years | join(', ') }}</dd>{% endif %}
+  {% if flags.batch and flags.batch.immediate_joiner %}<dt>Joining</dt><dd>Mentions immediate joining or a short notice period</dd>{% endif %}
+  <dt>Company tier</dt><dd>{{ job.tier or '—' }}</dd>
+  <dt>First seen</dt><dd>{{ job.first_seen_at | ago }}</dd>
+  <dt>Status</dt><dd>{{ job.state }}{% if not job.is_open %} · posting has closed{% endif %}</dd>
+</dl>
+
+{% if show_pack and pack %}
+<h2>Referrals</h2>
+<div class="card">
+  <h3>Find people at {{ pack.company }}</h3>
+  <p>These open LinkedIn or Google searches. You choose who to message and send it yourself.</p>
+  <div class="links">
+    {% for l in pack.links %}<a href="{{ l.url }}" target="_blank" rel="noopener"><span class="l">{{ l.label }}</span><span class="why">{{ l.why }}</span></a>{% endfor %}
+  </div>
+</div>
+{% for d in pack.drafts %}
+<div class="card">
+  <h3>{{ d.label }}{% if d.chars %} <span class="muted">· {{ d.chars }} characters</span>{% endif %}</h3>
+  <div class="draft" id="d{{ loop.index }}">{{ d.text }}</div>
+  <button class="btn quiet tiny copy" type="button" onclick="navigator.clipboard.writeText(document.getElementById('d{{ loop.index }}').innerText);this.textContent='Copied'">Copy</button>
+</div>
+{% endfor %}
+{% endif %}
+
+<h2>Description</h2>
+<div class="desc">{{ job.description or 'No description was provided by the source. Open the posting to read it.' }}</div>
+
+{% if events %}
+<h2>History</h2>
+<div class="events">{% for e in events %}<div>{{ e.ts }} · {{ e.event }}{% if e.note %} · {{ e.note }}{% endif %}</div>{% endfor %}</div>
+{% endif %}
+{% endblock %}

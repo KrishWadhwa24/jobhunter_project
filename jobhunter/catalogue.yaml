@@ -1,0 +1,184 @@
+# The role catalogue: families of jobs a person can track. Each family has
+#   match:   regex fragments tested against the job TITLE (lower-case, whole words)
+#   exclude: titles to drop even when a fragment matches
+#   suits:   background tags, used to suggest families on the Explore roles page
+# Add or edit families freely; the Settings page and Explore roles page read this file.
+
+families:
+  - id: writing_content
+    name: Content writing
+    group: Writing, editing and media
+    scheme: general
+    suits: [english, writing, remote]
+    remote: true
+    blurb: Blogs, web pages, product copy, scripts and social content. The most direct use of an English degree, and common as freelance or remote work.
+    titles: [Content Writer, Copywriter, Content Executive, Content Strategist, Scriptwriter, UX Writer, Technical Writer]
+    match: ["content writer", "content creator", "content executive", "content associate", "content specialist", "content strategist",
+            "content marketing", "content editor", "copywriter", "copy writer", "blog writer", "creative writer", "script ?writer",
+            "technical writer", "ux writer", "content design(er)?", "writer", "writing intern", "content intern"]
+    exclude: ["ghostwriter wanted"]
+
+  - id: editorial_publishing
+    name: Editorial and publishing
+    group: Writing, editing and media
+    scheme: general
+    suits: [english, writing]
+    blurb: Book and magazine publishing, copy-editing, proofreading and fact-checking. Competitive, but internships and editorial assistant roles are the usual way in.
+    titles: [Editorial Assistant, Copy Editor, Proofreader, Associate Editor, Production Editor, Publishing Intern]
+    match: ["editorial", "copy ?editor", "proof ?read(er|ing)", "sub-?editor", "associate editor", "assistant editor", "production editor",
+            "commissioning", "publishing", "fact[- ]?check(er|ing)", "editor", "editing intern"]
+    exclude: ["video editor", "photo editor", "film editor", "audio editor", "sound editor", "image editor", "photo ?shop", "colou?r"]
+
+  - id: journalism_media
+    name: Journalism and digital media
+    group: Writing, editing and media
+    scheme: general
+    suits: [english, writing]
+    blurb: Reporting, newsroom and digital desk roles, podcasts and audio or video story producers.
+    titles: [Reporter, Journalist, News Writer, Digital Producer, Podcast Producer, Content Producer]
+    match: ["journalist", "reporter", "correspondent", "news (writer|producer|editor|desk)", "digital (media|producer)", "podcast", "audio producer",
+            "content producer", "story ?teller", "feature writer", "media intern"]
+    exclude: ["camera", "video editor", "sound engineer"]
+
+  - id: communications_pr
+    name: Communications and PR
+    group: Writing, editing and media
+    scheme: general
+    suits: [english, writing]
+    blurb: Press releases, brand voice, internal and corporate communications, media relations.
+    titles: [Communications Associate, PR Executive, Corporate Communications Executive, Media Relations Associate]
+    match: ["communications?", "pr (executive|associate|manager|specialist|intern)", "public relations", "media relations", "brand communications",
+            "internal communications", "investor relations?", "corporate affairs"]
+    exclude: ["communications engineer", "network", "telecom", "wireless", "signal", "satellite", "rf "]
+
+  - id: marketing_social
+    name: Marketing, SEO and social media
+    group: Writing, editing and media
+    scheme: general
+    suits: [english, writing, remote]
+    remote: true
+    blurb: SEO content, social media, email and community roles where strong writing is the main skill.
+    titles: [SEO Executive, Social Media Executive, Community Associate, Digital Marketing Intern, Email Marketing Associate]
+    match: ["seo", "digital marketing", "social media", "email marketing", "community (manager|associate|executive|specialist)",
+            "growth marketing", "marketing (executive|associate|intern|coordinator)", "brand (executive|associate)"]
+    exclude: ["performance marketing manager", "marketing automation engineer"]
+
+  - id: teaching_education
+    name: Teaching and education content
+    group: Teaching and education
+    scheme: general
+    suits: [english, teaching, remote]
+    remote: true
+    blurb: English teaching and training, curriculum and assessment writing, subject-matter expert and academic counsellor roles in schools, edtech and test prep. A TEFL or TESOL certificate opens many doors.
+    titles: [English Teacher, English Trainer, Subject Matter Expert (English), Curriculum Developer, Instructional Designer, Academic Counsellor]
+    match: ["english (teacher|tutor|trainer|faculty|instructor|educator|coach|language|expert)", "spoken english", "subject matter expert", "\\bsme\\b", "curriculum",
+            "instructional design(er)?", "learning (designer|experience|content)", "content developer", "assessment (writer|content|developer)",
+            "academic (counsel+or|content|associate|coach|writer)", "teacher", "tutor", "trainer", "faculty", "educator", "ielts", "toefl",
+            "esl", "tesol", "tefl", "teaching (assistant|fellow|intern)", "education (associate|executive)", "reading"]
+    exclude: ["fitness trainer", "gym", "yoga", "dance", "music teacher", "personal trainer", "driving", "technical trainer", "sap trainer", "it trainer"]
+
+  - id: chess_sports
+    name: Chess and sports
+    group: Chess and sports
+    scheme: general
+    suits: [chess, sports, teaching, remote]
+    remote: true
+    blurb: Chess coaching and content, tournament operations, and sports or esports content, events and operations. Chess hiring is small and sporadic, so also watch the Always open list.
+    titles: [Chess Coach, Chess Instructor, Chess Content Creator, Tournament Coordinator, Esports Content Executive, Sports Operations Associate]
+    match: ["chess", "tournament (director|arbiter|operations|coordinator|executive)", "esports? (content|community|operations|coordinator|executive|associate)",
+            "sports? (content|marketing|operations|analyst|executive|associate|management|journalist|coordinator|writer)", "athlete (relations|management)", "game (content|community)"]
+    exclude: []
+
+  - id: customer_service
+    name: Customer service and support
+    group: Customer-facing
+    scheme: general
+    suits: [english, customer, any-degree]
+    blurb: Customer service associates and executives, chat, email and voice support. Large employers hire freshers in bulk and clear English is the main requirement. Includes banks and card companies, such as American Express.
+    titles: [Customer Service Associate, Customer Care Executive, Client Services Associate, Chat Support Executive, Process Associate]
+    match: ["customer (service|support|care|experience|success|happiness|associate|executive|relations)", "client (service|support|relations|success)",
+            "service (associate|desk|executive|delivery associate)", "support (associate|executive|specialist|agent)", "help ?desk", "contact cent(er|re)",
+            "call cent(er|re)", "voice process", "(chat|email|non-?voice|blended) (support|process)", "process (associate|executive)", "member services",
+            "customer onboarding", "bpo", "back office (executive|associate)", "customer (query|queries)"]
+    exclude: ["technical support engineer", "it support", "field service", "service engineer", "desktop support", "\\bl[123]\\b", "network support",
+              "support engineer", "customer success manager", "sales support engineer"]
+
+  - id: ai_language
+    name: AI training and language work
+    group: AI and language
+    scheme: general
+    suits: [english, writing, remote]
+    remote: true
+    blurb: Writing, rating and evaluating language-model output, data annotation, linguistics, content moderation and trust and safety, translation and localisation. Often remote and project based; quality of English is the whole job.
+    titles: [AI Trainer (English), Data Annotator, Language Specialist, Content Moderator, Search Quality Rater, Translator, Localisation Specialist]
+    match: ["ai (trainer|tutor|writer|evaluator|content|data|specialist)", "data annotat(or|ion)", "annotator", "(search )?(quality )?rater", "linguist(ic)?",
+            "language (specialist|analyst|expert|quality)", "prompt (writer|engineer|specialist)", "(llm|generative ai|genai) (trainer|evaluator|content|writer)",
+            "content (moderator|moderation|review(er)?)", "trust (and|&) safety", "policy (analyst|associate|specialist)", "transcri(ber|ption)",
+            "translator", "locali[sz]ation", "subtitl", "captioning", "proofreading analyst", "english (annotator|evaluator|rater)"]
+    exclude: ["machine learning engineer", "ml engineer", "data scientist", "software", "\\bnlp engineer"]
+
+  - id: research_policy
+    name: Research, policy and programmes
+    group: Research and social sector
+    scheme: general
+    suits: [english, research]
+    blurb: Research and policy assistants, programme associates, grant and proposal writers in think-tanks, foundations and NGOs.
+    titles: [Research Associate, Policy Analyst, Programme Associate, Grant Writer, Research Intern]
+    match: ["research (associate|analyst|assistant|intern|executive)", "policy (analyst|associate|intern|research)", "programme? (associate|coordinator|executive|officer|intern)",
+            "grant writer", "proposal writer", "documentation (associate|executive)", "knowledge (associate|executive|management)", "content researcher", "fellow(ship)?"]
+    exclude: ["clinical research", "market research analyst manager", "research engineer", "research scientist", "postdoc"]
+
+  - id: people_hr
+    name: HR, talent and learning
+    group: People and operations
+    scheme: general
+    suits: [english, any-degree]
+    blurb: HR executive, recruitment and talent-acquisition associate, learning and development, onboarding. Good communication matters more than the degree.
+    titles: [HR Executive, Talent Acquisition Associate, Recruiter, L&D Executive, People Operations Associate]
+    match: ["hr (executive|associate|intern|generalist|coordinator|operations)", "human resources? (executive|associate|intern|assistant)", "talent acquisition",
+            "recruit(er|ment)", "learning (and|&) development", "\\bl&d\\b", "people (operations|partner|associate|ops)", "onboarding", "campus (hiring|relations)", "talent (partner|associate|coordinator)"]
+    exclude: ["hr director", "chief"]
+
+  - id: ops_trainee
+    name: Operations and graduate trainee programmes
+    group: People and operations
+    scheme: general
+    suits: [any-degree]
+    blurb: Management or graduate trainee programmes and operations associate roles that accept any graduate. A way into large companies.
+    titles: [Management Trainee, Graduate Trainee, Executive Trainee, Operations Associate, Business Associate]
+    match: ["management trainee", "graduate trainee", "executive trainee", "(operations|business) (associate|executive|intern)", "associate (trainee|programme)", "trainee"]
+    exclude: ["engineer trainee", "graduate engineer", "gm trainee technical", "apprentice technician"]
+
+  - id: events_partnerships
+    name: Events and partnerships
+    group: People and operations
+    scheme: general
+    suits: [english, sports, any-degree]
+    blurb: Event coordination, community programmes and partnerships associates, including sports and cultural events.
+    titles: [Event Coordinator, Events Executive, Partnerships Associate, Community Programme Executive]
+    match: ["event (executive|coordinator|associate|manager|intern|operations)", "events? (marketing|operations)", "partnerships? (associate|executive|coordinator)",
+            "community (programme|program) (executive|associate|coordinator)"]
+    exclude: []
+
+  - id: software
+    name: Software engineering
+    group: Software
+    scheme: software
+    suits: [tech]
+    blurb: Backend, full-stack, frontend and related engineering roles. Use the SDE level chips to choose intern, SDE-1, SDE-2, SDE-3 or staff.
+    titles: [Software Engineer, SDE-1, Backend Engineer, Full-stack Developer, Member of Technical Staff]
+    match: ["software", "sde", "swe", "developer", "backend", "back-end", "full[- ]?stack", "frontend", "front-end", "member of technical staff", "\\bmts\\b", "engineer"]
+    exclude: ["sales", "marketing", "recruit", "support", "mechanical", "electrical", "hardware", "verification", "network engineer", "field engineer"]
+
+# Background tags shown on the Explore roles page
+backgrounds:
+  - {id: english, label: English or humanities degree}
+  - {id: writing, label: Strong writer}
+  - {id: teaching, label: Likes teaching or coaching}
+  - {id: chess, label: Chess player or coach}
+  - {id: sports, label: Sports or esports}
+  - {id: research, label: Research minded}
+  - {id: customer, label: Good with people, clear on calls and chat}
+  - {id: any-degree, label: Open to roles that accept any degree}
+  - {id: remote, label: Wants remote work}
+  - {id: tech, label: Computer science or engineering}

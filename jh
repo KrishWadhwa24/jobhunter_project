@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# One command for every profile.
+#   ./jh profiles                       list profiles and their dashboard ports
+#   ./jh new <name> [english|software|blank] ["Display name"]
+#   ./jh <profile> start|stop|restart|status|logs|setup|check|reevaluate|import FILE|chat-id|doctor|open
+#   ./jh start ...                      (no profile name) = the original, default profile
+#   ./jh up                             set up and (re)start EVERYTHING: every profile + the one public port (8780)
+#   ./jh down                           stop everything
+#   ./jh ps                             one line per profile: running?, port, who can sign in
+#   ./jh all <command> [args]           run a command for every profile, e.g.  ./jh all check --problems
+set -e
+cd "$(dirname "$0")"
+PY=.venv/bin/python
+[ -x "$PY" ] || { echo "Run 'make setup' first."; exit 1; }
+cli() { "$PY" -m jobhunter.cli "$@"; }
+
+each_profile() {      # usage: each_profile <command> [args...]  runs ./jh [profile] <command> for every profile
+  local slugs s rc=0 label
+  slugs=$(cli profiles --slugs) || return 1
+  for s in $slugs; do
+    label="$s"; echo; echo "==> $label"
+    if [ "$s" = "default" ]; then "$0" "$@" || rc=1; else "$0" "$s" "$@" || rc=1; fi
+  done
+  return $rc
+}
+
+case "${1:-}" in
+  up)   shift; each_profile setup-only && each_profile restart "$@"; rc=$?; echo; echo "==> gateway"; cli gateway-start || rc=1; echo; cli ps; exit $rc ;;
+  down) shift; each_profile stop "$@"; echo; cli gateway-stop; echo; cli ps; exit 0 ;;
+  ps)   cli ps; exit 0 ;;
+  all)  shift; [ -n "${1:-}" ] || { echo "Usage: ./jh all <command> [args]"; exit 2; }; each_profile "$@"; exit $? ;;
+  ""|-h|--help|help) sed -n '2,10p' "$0"; exit 0 ;;
+  profiles|list) cli profiles; exit 0 ;;
+  new)
+    shift; [ -n "${1:-}" ] || { echo "Usage: ./jh new <name> [english|software|blank] [\"Display name\"]"; exit 2; }
+    slug="$1"; tpl="${2:-blank}"; name="${3:-}"
+    if [ -n "$name" ]; then cli profile-new "$slug" --template "$tpl" --name "$name"; else cli profile-new "$slug" --template "$tpl"; fi
+    exit 0 ;;
+esac
+
+if [ -d "profiles/$1" ] && [ -f "profiles/$1/config.yaml" ]; then
+  export JOBHUNTER_PROFILE="$1"; shift
+fi
+cmd="${1:-}"; [ -n "$cmd" ] || { sed -n '2,10p' "$0"; exit 2; }; shift
+case "$cmd" in
+  start)   cli service-start "$@" ;;
+  stop)    cli service-stop "$@" ;;
+  restart) cli service-stop || true; cli service-start "$@" ;;
+  status)  cli service-status "$@" ;;
+  open)    port=$("$PY" -c "from jobhunter import config; print(config.PORT)"); open "http://127.0.0.1:$port" 2>/dev/null || echo "http://127.0.0.1:$port" ;;
+  setup-only) cli setup "$@" ;;      # used by ./jh up: no pip install, so a flaky connection cannot block a restart
+  setup)   "$PY" -m pip install -q -r requirements.txt || true; cli setup "$@" ;;
+  *)       cli "$cmd" "$@" ;;
+esac

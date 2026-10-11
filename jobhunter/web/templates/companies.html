@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Companies · {{ profile_name }}{% endblock %}
+{% block content %}
+{% if msg %}<div class="flash">{{ msg }}</div>{% endif %}
+{% if refresh %}<script>setTimeout(function(){ location.reload(); }, 3000);</script>{% endif %}
+{% if net_banner %}<div class="flash err"><b>{{ net_n }} companies could not be reached.</b> That points to your internet connection (slow or dropping), not to those companies. They are retried every 10 minutes and will fill in once the connection is steady. Try a different network or turn off any VPN or proxy.</div>{% endif %}
+<h1>Companies</h1>
+<p class="sub">{{ rows | length }} shown. Add a careers page and it is tracked from the next check.</p>
+
+<div class="panel">
+  <form class="card" method="post" action="/companies/detect">
+    <h3>Add a company</h3>
+    <p>Paste its careers page. The hiring platform is detected automatically.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input type="url" name="url" required placeholder="https://company.com/careers" style="flex:1 1 100%">
+      <input type="text" name="name" placeholder="Name (optional)" style="flex:1 1 150px">
+      <button class="btn solid" type="submit">Detect</button>
+    </div>
+  </form>
+  <form class="card" method="post" action="/companies/import" enctype="multipart/form-data">
+    <h3>Import from CSV</h3>
+    <p>Columns: company, category, pay_tier, source_type, slug_or_endpoint, careers_url, active, notes.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+      <input type="file" name="file" accept=".csv" required>
+      <button class="btn" type="submit">Import</button>
+    </div>
+  </form>
+</div>
+
+<div class="filters" style="padding-top:26px">
+  <div class="seg">
+    {% for key, label in [('all','All'),('failing','Failing'),('network','Connection'),('browser','Needs browser'),('paused','Paused')] %}
+      <a href="/companies?view={{ key }}" class="{% if view == key %}on{% endif %}">{{ label }}</a>
+    {% endfor %}
+  </div>
+  <input class="search" type="search" id="filter" placeholder="Filter by name" oninput="
+    const q=this.value.toLowerCase();document.querySelectorAll('tbody tr').forEach(r=>r.style.display=r.dataset.name.includes(q)?'':'none')">
+</div>
+
+<table>
+  <colgroup><col style="width:19%"><col style="width:21%"><col style="width:19%"><col style="width:6%"><col style="width:9%"><col style="width:12%"><col style="width:150px"></colgroup>
+  <thead><tr><th>Company</th><th>Source</th><th>Status</th><th class="num">Jobs</th><th class="num">Matches</th><th>Checked</th><th></th></tr></thead>
+  <tbody>
+  {% for c in rows %}
+    <tr data-name="{{ c.name | lower }}" class="{% if not c.active %}dim{% endif %}">
+      <td><strong style="font-weight:500">{{ c.name }}</strong>{% if c.pay_tier %} <span class="muted">· {{ c.pay_tier }}</span>{% endif %}
+          <span class="sm">{{ c.category }}</span></td>
+      <td data-l="Source">{{ c.source_type }}<span class="sm">{% if c.careers_url %}<a href="{{ c.careers_url }}" target="_blank" rel="noopener">{{ c.careers_url }}</a>{% endif %}</span></td>
+      <td data-l="Status">{% if c.last_status == 'ok' %}Working{% elif c.net %}Connection problem, retrying{% elif c.last_status == 'error' %}Failing{% elif c.last_status == 'skipped' %}Needs browser{% else %}Not checked{% endif %}
+          {% if c.last_error %}<span class="sm" title="{{ c.last_error }}">{{ c.last_error }}</span>{% endif %}</td>
+      <td class="num" data-l="Jobs">{{ c.last_job_count }}</td>
+      <td class="num" data-l="Matches">{{ c.last_relevant_count }}</td>
+      <td data-l="Checked">{{ c.last_fetch_at | ago }}</td>
+      <td class="acts" style="white-space:nowrap">
+        <form class="inline" method="post" action="/companies/{{ c.id }}/check"><button class="btn quiet tiny" type="submit">Check</button></form>
+        <form class="inline" method="post" action="/companies/{{ c.id }}/toggle"><button class="btn quiet tiny" type="submit">{{ 'Pause' if c.active else 'Resume' }}</button></form>
+      </td>
+    </tr>
+  {% else %}
+    <tr><td colspan="7" class="empty">No companies match this view.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

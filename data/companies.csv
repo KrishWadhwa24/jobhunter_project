@@ -1,0 +1,209 @@
+company,category,pay_tier,source_type,slug_or_endpoint,careers_url,verified,active,notes
+Acko,Fintech India,T2,kula,acko,https://www.acko.com/careers/,yes,yes,Kula ATS | Kula JSON feed
+Adobe,Big Tech,T2,workday,https://adobe.wd5.myworkdayjobs.com/external_experienced,https://careers.adobe.com/us/en/search-results?qcountry=India,no,yes,Phenom front-end over Workday; university site: adobe.wd5.myworkdayjobs.com/external_university
+Agoda,Travel,T2,greenhouse,agoda,https://careersatagoda.com/,yes,no,Mostly Bangkok (relocation) - enable if open to relocating
+Airbnb,Consumer MNC,T1,greenhouse,airbnb,https://careers.airbnb.com/positions/,yes,yes,Bangalore eng (mostly senior)
+Akamai Technologies,Enterprise/Infra,T2,oracle_hcm,https://jobs.akamai.com/en/sites/CX_1,https://jobs.akamai.com/en/sites/CX_1/jobs?keyword=engineering&mode=location,no,yes,Oracle Recruiting CX_1; need underlying oraclecloud host. Early career page exists
+AlphaGrep,Quant/HFT,T1,greenhouse,alphagrepsecurities,https://www.alphagrep.com/careers,yes,yes,Intern Hiring 2027 (Bengaluru) seen
+Amadeus,Travel,T3,workday,https://amadeus.wd502.myworkdayjobs.com/jobs,https://amadeus.com/en/careers/overview,no,yes,Bengaluru
+Amazon,Big Tech,T1,custom_json,https://www.amazon.jobs/en/search.json?country=IND&category[]=software-development&result_limit=100&offset=0,https://www.amazon.jobs/en/search?country=IND&category[]=software-development,yes,yes,JSON search endpoint; 400+ India SW-dev roles. Also check amazon.jobs university programs
+AMD,Semis/Hardware,T2,jibe,https://careers.amd.com/api/jobs?location=India&page=1&limit=100,https://careers.amd.com/careers-home/jobs,yes,yes,Jibe JSON incl. INR salary ranges; Hyderabad/Bengaluru
+American Express,Banking Tech,T3,oracle_hcm,https://egug.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1,https://careers.americanexpress.com/en/sites/CX_1/jobs,no,yes,Oracle HCM CX_1
+Analog Devices,Semis/Hardware,T3,workday,https://analogdevices.wd1.myworkdayjobs.com/External,https://analogdevices.wd1.myworkdayjobs.com/External,no,yes,
+Apple,Big Tech,T1,html,https://jobs.apple.com/en-in/search?location=india-INDC,https://jobs.apple.com/en-in/search?location=india-INDC,yes,yes,HTML search; mostly retail - filter by team (Software and Services). Internal POST API exists
+Applied Materials,Semis/Hardware,T3,workday,https://amat.wd1.myworkdayjobs.com/External,https://amat.wd1.myworkdayjobs.com/External,no,yes,
+Arcesium,Fintech MNC,T2,greenhouse,arcesiumllc,https://www.arcesium.com/careers,yes,yes,Slug is arcesiumllc; 20+ India roles
+Arctic Wolf,Security,T2,workday,https://arcticwolf.wd1.myworkdayjobs.com/External,https://arcticwolf.wd1.myworkdayjobs.com/External,no,yes,Bengaluru developer/SDET
+Arista Networks,Enterprise/Infra,T1,browser,https://www.arista.com/en/careers/india,https://www.arista.com/en/careers/india,no,yes,"In-house site, JS-loaded; Bangalore/Pune/Chennai. University: arista.com/en/careers/university"
+Arm,Semis/Hardware,T2,browser,https://careers.arm.com/search-jobs,https://careers.arm.com/,yes,yes,Radancy + iCIMS; graduates page
+Ather Energy,EV/Hardware,T3,browser,https://careers.atherenergy.com/jobs,https://careers.atherenergy.com/jobs,no,yes,
+Atlan,SaaS,T2,ashby,atlan,https://jobs.ashbyhq.com/atlan,yes,yes,Mostly senior
+Atlassian,Big Tech,T1,custom_json,https://www.atlassian.com/endpoint/careers/listings,https://www.atlassian.com/company/careers/all-jobs,yes,yes,Full JSON array; filter Bengaluru client-side. Backend iCIMS
+Autodesk,Enterprise/Infra,T2,workday,https://autodesk.wd1.myworkdayjobs.com/Ext,https://autodesk.wd1.myworkdayjobs.com/Ext,no,yes,Bengaluru
+Avalara,SaaS,T3,jibe,https://careers.avalara.com/api/jobs?location=India&page=1,https://careers.avalara.com/careers-home/locations,yes,yes,Jibe/iCIMS JSON; Pune
+BlackRock,Banking Tech,T2,workday,https://blackrock.wd1.myworkdayjobs.com/BlackRock_Professional,https://careers.blackrock.com/search-jobs,no,yes,Gurugram/Mumbai; early careers separate
+Broadcom (VMware),Enterprise/Infra,T2,workday,https://broadcom.wd1.myworkdayjobs.com/External_Career,https://broadcom.wd1.myworkdayjobs.com/External_Career,no,yes,Bengaluru/Pune/Chennai
+BrowserStack,SaaS,T2,workday,https://browserstack.wd3.myworkdayjobs.com/External,https://www.browserstack.com/careers,no,yes,Posts fresher SDE roles
+Cadence Design Systems,Semis/Hardware,T2,workday,https://cadence.wd1.myworkdayjobs.com/External_Careers,https://cadence.wd1.myworkdayjobs.com/External_Careers,no,yes,Noida/Bengaluru/Pune
+Cars24,Indian Consumer,T3,browser,https://cars24.keka.com/careers,https://careers.cars24.com/,no,yes,Keka
+Chargebee,SaaS,T3,html,https://jobs.chargebee.com/search/?q=,https://jobs.chargebee.com,yes,yes,SuccessFactors RMK HTML; currently few roles
+Check Point Software,Security,T2,html,https://careers.checkpoint.com/index.php?m=cpcareers&a=search,https://careers.checkpoint.com/,yes,yes,In-house PHP; parse HTML
+Ciena,Enterprise/Infra,T3,workday,https://ciena.wd5.myworkdayjobs.com/Careers,https://ciena.wd5.myworkdayjobs.com/Careers,no,yes,Gurugram; students/new-grad page
+Cisco,Enterprise/Infra,T2,browser,https://careers.cisco.com/global/en/search-results?qcountry=India,https://careers.cisco.com/global/en/search-results?qcountry=India,no,yes,"Phenom front-end, JS-loaded"
+CleverTap,SaaS,T3,kula,clevertap,https://clevertap.com/careers/,yes,yes,Kula ATS; Mumbai | Kula JSON feed
+Cloud Software Group (Citrix),Enterprise/Infra,T2,browser,https://careers.cloud.com/,https://careers.cloud.com/,no,yes,Vendor unresolved
+Cloudera,Enterprise/Infra,T2,workday,https://cloudera.wd5.myworkdayjobs.com/External_Career,https://www.cloudera.com/careers.html,no,yes,
+Cohesity,Enterprise/Infra,T1,greenhouse,cohesity,https://www.cohesity.com/careers/open-positions/,no,yes,Likely Greenhouse embed; API fetch failed - verify slug
+Coinbase,Fintech MNC,T1,greenhouse,coinbase,https://www.coinbase.com/careers,yes,yes,Remote-India roles
+CoinDCX,Fintech India,T2,browser,https://coindcx.com/opportunities/openings,https://coindcx.com/opportunities,no,yes,In-house
+CoinSwitch,Fintech India,T2,browser,https://recruiterflow.com/coinswitch/jobs,https://coinswitch.co/careers/,no,yes,Recruiterflow ATS
+Commvault,Enterprise/Infra,T3,greenhouse,commvault,https://www.commvault.com/careers/jobs,yes,yes,Bangalore/Hyderabad/Pune; internships page
+Confluent,SaaS,T1,ashby,confluent,https://careers.confluent.io,yes,yes,Remote India / Bengaluru
+Couchbase,SaaS,T2,greenhouse,couchbaseinc,https://www.couchbase.com/careers/,yes,yes,Bangalore
+Coupa,SaaS,T2,lever,coupa,https://careers.coupa.com/en/jobs/,yes,yes,Pune SWE
+CRED,Fintech India,T1,lever,cred,https://careers.cred.club/,yes,yes,Few roles currently
+CrowdStrike,Security,T2,workday,https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers,https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers,no,yes,Bengaluru/Pune; university page
+Cult.fit,Indian Consumer,T3,browser,https://careers.cult.fit/cult/,https://careers.cult.fit/cult/,no,yes,
+Cvent,SaaS,T2,jibe,https://careers.cvent.com/api/jobs?location=India&page=1,https://careers.cvent.com/jobs,yes,yes,Jibe/iCIMS JSON; Gurugram
+D. E. Shaw India,Quant/HFT,T1,html,https://www.deshawindia.com/careers,https://www.deshawindia.com/careers,yes,yes,Hyderabad/Bengaluru/Gurugram
+Darwinbox,SaaS,T3,browser,https://dbx.darwinbox.in/ms/candidatev2/main/careers/allJobs,https://darwinbox.com/en-us/careers,no,yes,
+Databricks,SaaS,T1,greenhouse,databricks,https://www.databricks.com/company/careers,yes,yes,Many Bengaluru eng roles
+Delhivery,Logistics,T3,browser,https://delhivery.darwinbox.in/ms/candidate/careers/a61c17fcc000fc,https://www.delhivery.com/careers,no,yes,Darwinbox
+Deutsche Telekom Digital Labs,Enterprise/Infra,T3,browser,https://careers.telekom.com/en/jobs?search=software&location=India,https://careers.telekom.com/en/jobs,no,yes,SmartRecruiters per-entity slugs; DTDL slug unresolved
+Dhan,Fintech India,T3,browser,https://dhan.keka.com/careers/,https://dhan.co/career/,no,yes,Keka-hosted
+Directi,Ad-tech,T1,browser,https://careers.directi.com/,https://careers.directi.com/,no,yes,In-house
+DocuSign,SaaS,T2,jibe,https://careers.docusign.com/api/jobs?location=India&page=1,https://careers.docusign.com/jobs,yes,yes,Jibe/iCIMS JSON; Bengaluru
+Dream11 (Dream Sports),Gaming,T1,lever,dreamsports,https://www.dreamsports.group/careers,no,yes,Lever postings seen in search; API fetch failed once - verify
+Druva,SaaS,T2,greenhouse,druva,https://www.druva.com/company/careers,yes,yes,Pune; mostly senior
+Eightfold AI,SaaS,T2,eightfold,https://app.eightfold.ai/api/apply/v2/jobs?domain=eightfold.ai,https://eightfold.ai/careers/,no,yes,Own platform; endpoint unverified
+Elastic,SaaS,T2,greenhouse,elastic,https://jobs.elastic.co,yes,yes,Remote India
+Electronic Arts,Gaming,T3,html,https://jobs.ea.com/en_US/careers/SearchJobs,https://jobs.ea.com/en_US/careers/Home,yes,yes,Avature HTML; Hyderabad
+Expedia,Travel,T2,workday,https://expedia.wd108.myworkdayjobs.com/search,https://careers.expediagroup.com/jobs/?keyword=software&filter[country]=India,yes,yes,Gurgaon SDE II/III seen
+Extreme Networks,Enterprise/Infra,T3,lever,extremenetworks,https://jobs.lever.co/extremenetworks,yes,yes,Bengaluru/Chennai
+F5,Enterprise/Infra,T2,workday,https://ffive.wd5.myworkdayjobs.com/f5jobs,https://ffive.wd5.myworkdayjobs.com/f5jobs,no,yes,Tenant 'ffive'; Hyderabad/Bengaluru
+FamPay,Fintech India,T3,lever,fampay,https://jobs.lever.co/fampay,yes,yes,"SDE 2, Security intern"
+Fivetran,SaaS,T2,greenhouse,fivetran,https://www.fivetran.com/careers,yes,yes,Bengaluru SWE/SDET
+Flipkart,Indian Consumer,T1,browser,https://flipkart.turbohire.co/careerpage/4d757ba0-3d57-448a-b82c-238ed87ac90f,https://www.flipkartcareers.com/,no,yes,TurboHire-hosted; JS
+Freshworks,SaaS,T3,smartrecruiters,Freshworks,https://careers.smartrecruiters.com/Freshworks,yes,yes,Chennai/Bengaluru
+Games24x7,Gaming,T2,browser,https://games24x7.darwinbox.in/ms/candidate/a6150564417204/careers,https://www.games24x7.com/life,no,yes,Darwinbox
+Gameskraft,Gaming,T2,browser,https://www.gameskraft.com/careers/,https://www.gameskraft.com/careers,no,yes,Embedded ATS
+Gartner,Enterprise/Infra,T3,workday,https://gartner.wd5.myworkdayjobs.com/EXT,https://jobs.gartner.com/jobs/,yes,yes,Gurugram
+Gen Digital,Security,T3,ashby,gen-digital,https://jobs.ashbyhq.com/gen-digital,yes,yes,Pune/Chennai
+Glance,Indian Consumer,T2,greenhouse,glance,https://job-boards.greenhouse.io/glance,yes,yes,Mostly senior
+Gojek (GoTo),Consumer MNC,T2,lever,GoToGroup,https://www.gotocompany.com/en/careers,yes,no,India tech hiring dormant
+Goldman Sachs,Banking Tech,T2,browser,https://higher.gs.com/results?&page=1&sort=RELEVANCE,https://higher.gs.com/,no,yes,In-house portal. Campus: goldmansachs.com/careers/students
+Google,Big Tech,T1,html,https://www.google.com/about/careers/applications/jobs/results?location=India&q=software%20engineer&target_level=EARLY,https://www.google.com/about/careers/applications/jobs/results?location=India,yes,yes,Server-rendered HTML; early-career SWE roles in Bengaluru/Hyderabad seen. Students: google.com/about/careers/applications/students/
+Grab,Consumer MNC,T2,smartrecruiters,Grab,https://www.grab.careers/en/jobs/,yes,yes,Bangalore openings
+Graviton Research Capital,Quant/HFT,T1,greenhouse,gravitonresearchcapital,https://www.graviton.in/careers,yes,yes,Gurugram
+Groww,Fintech India,T2,greenhouse,eu:groww,https://groww.in/careers,yes,yes,EU Greenhouse: boards-api.eu.greenhouse.io/v1/boards/groww/jobs
+Guidewire,SaaS,T2,workday,https://guidewire.wd5.myworkdayjobs.com/external,https://www.guidewire.com/about/careers/jobs,no,yes,Bengaluru; Basecamp grad program
+Gupshup,SaaS,T3,linkedin_only,https://www.gupshup.ai/careers,https://www.gupshup.ai/careers,no,no,No ATS; WhatsApp-based applications
+HackerRank,SaaS,T2,greenhouse,hackerrank,https://www.hackerrank.com/careers/home,yes,yes,Bangalore
+Harness,SaaS,T2,greenhouse,harnessinc,https://www.harness.io/company/careers,yes,yes,"Bengaluru, mostly senior"
+Hasura (PromptQL),SaaS,T2,html,https://jobs.gem.com/promptql,https://promptql.io/careers,yes,yes,Gem ATS
+Hevo Data,SaaS,T3,lever,hevodata,https://hevodata.com/careers/,yes,yes,SDE I roles seen
+Hewlett Packard Enterprise,Enterprise/Infra,T3,workday,https://hpe.wd5.myworkdayjobs.com/Jobsathpe,https://careers.hpe.com/us/en/search-results,no,yes,Includes Juniper & Aruba
+Icertis,SaaS,T3,oracle_hcm,https://iaaviz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Jobs-at-Icertis,https://iaaviz.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Jobs-at-Icertis/,no,yes,siteNumber unresolved
+INDmoney,Fintech India,T3,browser,https://www.indmoney.com/careers,https://www.indmoney.com/careers,no,yes,"JS app, ATS unknown"
+Infoblox,Enterprise/Infra,T2,oracle_hcm,https://efpv.fa.us6.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1,https://efpv.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1,no,yes,Bengaluru
+InMobi,Indian Consumer,T2,greenhouse,inmobi,https://job-boards.greenhouse.io/inmobi,yes,yes,SDE II/III seen
+Innovaccer,SaaS,T2,greenhouse,innovaccer,https://innovaccer.com/careers/jobs,yes,yes,SDE-I roles (Noida)
+Intel,Semis/Hardware,T3,workday,https://intel.wd1.myworkdayjobs.com/External,https://jobs.intel.com/,no,yes,
+Intuit,Enterprise/Infra,T1,browser,https://jobs.intuit.com/search-jobs/India,https://jobs.intuit.com/search-jobs/India,no,yes,Radancy/TalentBrew front-end; 'Software Engineer 1' India postings exist
+Jar,Fintech India,T3,html,https://changejar.applytojob.com/apply,https://www.myjar.app/careers,yes,yes,JazzHR
+JFrog,SaaS,T2,greenhouse,jfrog,https://join.jfrog.com,yes,yes,Bangalore
+JPMorgan Chase,Banking Tech,T3,oracle_hcm,https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1001,https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/requisitions,no,yes,Oracle HCM CX_1001
+Jupiter,Fintech India,T3,browser,https://jupiter.keka.com/careers,https://www.jupiter.money/careers,no,yes,Keka-hosted
+Juspay,Fintech India,T2,html,https://juspay.io/careers,https://juspay.io/careers,no,yes,In-house; no openings at check time
+KLA,Semis/Hardware,T3,workday,https://kla.wd1.myworkdayjobs.com/Search,https://kla.wd1.myworkdayjobs.com/Search,no,yes,Chennai
+Kuku FM,Indian Consumer,T3,browser,https://kukufm.com/careers,https://kukufm.com/careers,no,yes,ATS unknown
+LambdaTest (TestMu AI),SaaS,T3,browser,https://www.testmuai.com/career/,https://www.testmuai.com/career/,no,yes,
+Lenskart,Indian Consumer,T3,browser,https://ainterviews.com/job_board/lenskart_ho/,https://careers.lenskart.com/,no,yes,0 jobs at check time
+Licious,Indian Consumer,T3,browser,https://www.licious.in/careers/jobs,https://www.licious.in/careers,no,yes,
+LinkedIn,Big Tech,T1,linkedin_only,https://www.linkedin.com/jobs/search/?f_C=1337&geoId=90009633,https://careers.linkedin.com/,no,no,Jobs only on LinkedIn; scraping violates ToS. Track manually / via Telegram channels
+Lowes India,Retail Tech,T3,workday,https://lowes.wd5.myworkdayjobs.com/LWS_External_CS,https://talent.lowes.com/in/en,no,yes,"India jobs posted on talent.lowes.com/in/en (Workday tenant behind it returns no listings to plain fetch). Associate Software Engineer JR-02622622 (Bengaluru, 0-2 yrs) seen Sep 2026"
+MakeMyTrip,Travel,T3,browser,https://careers.makemytrip.com/,https://careers.makemytrip.com/,no,yes,JS app
+Marvell,Semis/Hardware,T2,workday,https://marvell.wd1.myworkdayjobs.com/MarvellCareers,https://marvell.wd1.myworkdayjobs.com/MarvellCareers,no,yes,
+Mastercard,Fintech MNC,T3,workday,https://mastercard.wd1.myworkdayjobs.com/CorporateCareers,https://careers.mastercard.com/us/en/search-results?keywords=software&qcountry=India,no,yes,Pune/Gurgaon/Vadodara
+MathWorks,Enterprise/Infra,T3,rss,https://www.mathworks.com/company/jobs/opportunities/rss.xml,https://www.mathworks.com/company/jobs/opportunities/search,yes,yes,RSS with country field; Hyderabad/Bengaluru
+Media.net,Ad-tech,T1,html,https://careers.media.net/engineering,https://careers.media.net/,yes,yes,WordPress page by category
+Meesho,Indian Consumer,T2,lever,meesho,https://www.meesho.io/jobs,yes,yes,
+Meta,Big Tech,T1,browser,https://www.metacareers.com/jobs?offices[0]=Bangalore%2C%20India,https://www.metacareers.com/jobs?offices[0]=Bangalore%2C%20India,no,yes,GraphQL needs tokens; use headless browser. Very few India SWE roles
+Micron,Semis/Hardware,T3,workday,https://micron.wd1.myworkdayjobs.com/External,https://micron.wd1.myworkdayjobs.com/External,no,yes,Hyderabad
+Microsoft,Big Tech,T1,eightfold,https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=software%20engineer&location=India&start=0,https://apply.careers.microsoft.com/careers?query=software%20engineer&location=India,yes,yes,Eightfold pcsx JSON; paginate with start=. Hyderabad/Noida/Bengaluru
+Mindtickle,SaaS,T2,lever,mindtickle,https://www.mindtickle.com/careers/,yes,yes,Pune/Bengaluru
+MoEngage,SaaS,T2,recruiterbox,https://jsapi.recruiterbox.com/v1/openings?client_name=moengage,https://moengage.hire.trakstar.com/,yes,yes,Trakstar Hire JSON; Bengaluru
+MongoDB,SaaS,T1,greenhouse,mongodb,https://www.mongodb.com/company/careers,yes,yes,Gurugram/Bengaluru
+Morgan Stanley,Banking Tech,T3,workday,https://ms.wd5.myworkdayjobs.com/External,https://www.morganstanley.com/careers/career-opportunities-search,no,yes,
+MPL,Gaming,T2,browser,https://mpl.darwinbox.in/ms/candidate/careers,https://www.mpl.live/careers,no,yes,Darwinbox
+Myntra,Indian Consumer,T2,browser,https://careers.myntra.com/,https://careers.myntra.com/,no,no,Careers site under maintenance at check time; re-check
+Nasdaq,Fintech MNC,T3,workday,https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site,https://nasdaq.wd1.myworkdayjobs.com/Global_External_Site,no,yes,Bengaluru/Mumbai
+Navi,Fintech India,T2,browser,https://navi.turbohire.co/dashboardv2?orgId=3e818601-0baa-429c-b6f8-4b21903ae0e6&type=0,https://navi.com/careers,no,yes,TurboHire; SDE-1 Backend seen
+NetApp,Enterprise/Infra,T2,browser,https://careers.netapp.com/search-jobs,https://careers.netapp.com,no,yes,Radancy front-end; Emerging Talent roles
+New Relic,SaaS,T2,greenhouse,newrelic,https://newrelic.com/about/careers,yes,yes,Hyderabad/Bangalore
+Nutanix,Enterprise/Infra,T1,html,https://jobs.jobvite.com/nutanix/jobs,https://careers.nutanix.com,yes,yes,Jobvite HTML board; Bangalore/Pune eng. New-grad title is MTS
+NVIDIA,Semis/Hardware,T1,workday,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite,no,yes,Standard Workday CXS; Bengaluru/Pune/Hyderabad
+Nykaa,Indian Consumer,T3,browser,https://careers.nykaa.com/,https://careers.nykaa.com/,no,yes,
+Observe.AI,SaaS,T2,greenhouse,observeai,https://www.observe.ai/careers,yes,yes,Bengaluru/Hyderabad
+Okta,Security,T2,greenhouse,okta,https://www.okta.com/company/careers/,yes,yes,Many Bengaluru roles
+Ola,Mobility,T2,browser,https://ola.skillate.com/,https://ola.skillate.com/,no,yes,Skillate ATS
+OpenText,Enterprise/Infra,T3,browser,https://careers.opentext.com/us/en/search-results,https://careers.opentext.com/us/en/c/engineering-jobs,no,yes,Phenom
+Oracle,Big Tech,T2,oracle_hcm,"https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_45001,keyword=software,limit=25",https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions?location=India,no,yes,"Oracle HCM REST, site CX_45001. OCI roles pay most"
+Palo Alto Networks,Security,T1,browser,https://jobs.paloaltonetworks.com/en/search-jobs,https://jobs.paloaltonetworks.com/en/search-jobs,no,yes,Radancy front-end; Bangalore roles mostly senior
+PayPal,Fintech MNC,T2,eightfold,https://paypal.eightfold.ai/api/pcsx/search?domain=paypal.com&query=software&location=India&start=0,https://paypal.eightfold.ai/careers?query=software&location=India,yes,yes,Eightfold pcsx; Chennai/Bengaluru/Hyderabad
+PhonePe,Fintech India,T2,greenhouse,phonepe,https://www.phonepe.com/careers/,yes,yes,SWE roles (1-3+ yrs); large API response
+Physics Wallah,Edtech,T3,browser,https://pwhr.darwinbox.in/ms/candidatev2/a62d7a6e288992/careers/home,https://pwhr.darwinbox.in/ms/candidatev2/a62d7a6e288992/careers/home,yes,yes,Darwinbox careers page (link given by user); read with the browser reader
+Pocket FM,Indian Consumer,T2,lever,pocketfm,https://jobs.lever.co/pocketfm,yes,yes,Mostly content roles currently
+PolicyBazaar,Fintech India,T3,browser,https://www.policybazaar.com/careers/,https://www.policybazaar.com/careers/,no,yes,In-house apply forms
+Postman,SaaS,T2,greenhouse,postman,https://www.postman.com/company/careers/,yes,yes,Bangalore/Noida; API flaky - retry
+Probo,Gaming,T2,html,https://probo.in/careers,https://probo.in/careers,yes,yes,Backend/Fullstack (Gurugram)
+Proofpoint,Security,T2,workday,https://proofpoint.wd5.myworkdayjobs.com/proofpointcareers,https://proofpoint.wd5.myworkdayjobs.com/proofpointcareers,no,yes,Bengaluru/Pune
+PTC,Enterprise/Infra,T3,workday,https://ptc.wd1.myworkdayjobs.com/PTC,https://ptc.wd1.myworkdayjobs.com/PTC,no,yes,Pune
+Pure Storage,Enterprise/Infra,T1,greenhouse,purestorage,https://www.purestorage.com/company/careers.html,yes,yes,Feed branded 'Everpure'; many Bangalore eng
+Quadeye,Quant/HFT,T1,browser,https://www.quadeye.com/careers,https://www.quadeye.com/careers,no,yes,JS-loaded roles
+Qualcomm,Semis/Hardware,T3,eightfold,https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=software&location=India&start=0,https://careers.qualcomm.com/careers?query=software&location=India,yes,yes,Eightfold pcsx; 400+ India results. Campus title 'Associate Engineer'
+Qualys,Security,T3,workday,https://qualys.wd5.myworkdayjobs.com/Careers,https://qualys.wd5.myworkdayjobs.com/Careers,no,yes,Pune R&D
+Rapid7,Security,T3,browser,https://careers.rapid7.com/jobs/search,https://careers.rapid7.com/jobs/search,no,yes,Pune 'Software Engineer I' seen; emerging talent page
+Rapido,Mobility,T2,browser,https://rapido.darwinbox.in/ms/candidate/careers,https://www.rapido.bike/Careers,no,yes,Darwinbox
+Razorpay,Fintech India,T2,greenhouse,razorpaysoftwareprivatelimited,https://razorpay.com/jobs/,yes,yes,
+Red Hat,Enterprise/Infra,T3,workday,https://redhat.wd5.myworkdayjobs.com/Jobs,https://redhat.wd5.myworkdayjobs.com/Jobs,no,yes,Bengaluru/Pune
+RingCentral,SaaS,T2,workday,https://ringcentral.wd1.myworkdayjobs.com/RingCentral_Careers,https://ringcentral.wd1.myworkdayjobs.com/RingCentral_Careers/?locations=d991ab3e688c0149b95c51d503026f83,no,yes,India facet d991ab3e688c0149b95c51d503026f83
+Rippling,SaaS,T1,custom_json,https://api.rippling.com/platform/api/ats/v1/board/rippling/jobs,https://ats.rippling.com/rippling/jobs,yes,yes,Rippling's own ATS JSON; Bangalore
+Rubrik,Enterprise/Infra,T1,greenhouse,rubrik,https://www.rubrik.com/company/careers,yes,yes,Bangalore/Pune SWE
+Rupeek,Fintech India,T3,html,https://rupeek.com/careers,https://rupeek.com/careers,yes,yes,Listings link to LinkedIn
+Sabre,Travel,T3,workday,https://sabre.wd1.myworkdayjobs.com/SabreJobs,https://sabre.wd1.myworkdayjobs.com/SabreJobs,no,yes,Bengaluru
+Salesforce,Big Tech,T2,workday,https://salesforce.wd12.myworkdayjobs.com/External_Career_Site,https://www.salesforce.com/company/careers/jobs/,no,yes,Also covers Informatica (now Salesforce). Hyderabad/Bengaluru
+Samsara,SaaS,T1,greenhouse,samsara,https://www.samsara.com/company/careers,yes,yes,Bengaluru
+Samsung R&D Institute India,Semis/Hardware,T3,workday,https://sec.wd3.myworkdayjobs.com/Samsung_Careers,https://sec.wd3.myworkdayjobs.com/en-US/Samsung_Careers,no,yes,Global tenant; filter SRI-B/SRI-N
+Sandisk,Semis/Hardware,T3,browser,https://avature.sandisk.com/Careers/SearchJobs,https://avature.sandisk.com/Careers,no,yes,Avature
+Scaler,Edtech,T3,html,https://www.scaler.com/careers/,https://www.scaler.com/careers/,yes,yes,No SDE roles at check time
+SentinelOne,Security,T2,greenhouse,sentinellabs,https://www.sentinelone.com/jobs/,yes,yes,Bengaluru SWE + intern
+ServiceNow,Enterprise/Infra,T1,smartrecruiters,ServiceNow,https://careers.servicenow.com/jobs/?search=&country=India,no,yes,Job IDs are SmartRecruiters format; Hyderabad
+Setu (Pine Labs),Fintech India,T3,browser,https://pinelabsgroup.turbohire.co/,https://setu.co/careers,yes,yes,Pine Labs TurboHire; SDE I roles
+ShareChat,Indian Consumer,T2,browser,https://sharechat.com/careers,https://sharechat.com/careers,no,yes,"JS, ATS unknown"
+Siemens (EDA / DISW),Semis/Hardware,T3,html,https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=software&country=India,https://jobs.siemens.com/en_US/externaljobs/SearchJobs,yes,yes,Avature HTML; filter by business unit
+Simpl,Fintech India,T3,browser,https://www.getsimpl.com/careers/,https://www.getsimpl.com/careers/,no,yes,ATS unknown
+Slice,Fintech India,T2,kula,slice,https://slice.bank.in/careers,yes,yes,Kula ATS; SDE 2 + internships | Kula JSON feed
+smallcase,Fintech India,T3,browser,https://smallcase.darwinbox.in/ms/candidate/careers/a62b29962e302f,https://www.smallcase.com/careers/,no,yes,Darwinbox
+Snowflake,SaaS,T1,ashby,snowflake,https://careers.snowflake.com,yes,yes,Large board; filter India
+Spinny,Indian Consumer,T3,browser,https://spinzone.darwinbox.in/ms/candidate/careers,https://www.spinny.com/careers/,no,yes,Darwinbox
+Sprinklr,SaaS,T2,workday,https://sprinklr.wd1.myworkdayjobs.com/careers,https://www.sprinklr.com/careers/,no,yes,Gurgaon SDE roles
+Sprinto,SaaS,T3,lever,Sprinto,https://jobs.lever.co/Sprinto,yes,yes,
+Stripe,Fintech MNC,T1,greenhouse,stripe,https://stripe.com/jobs,yes,yes,Bengaluru roles currently non-SWE
+Sumo Logic,SaaS,T2,greenhouse,sumologic,https://www.sumologic.com/careers/,yes,yes,Noida/Bengaluru
+Swiggy,Indian Consumer,T2,smartrecruiters,SWIGGY,https://careers.swiggy.in/,yes,yes,SDE II/III backend seen
+Synopsys,Semis/Hardware,T2,browser,https://careers.synopsys.com/search-jobs,https://careers.synopsys.com/,yes,yes,Radancy front-end (Avature behind); early careers page
+Target India,Retail Tech,T3,workday,https://target.wd5.myworkdayjobs.com/targetcareers,https://indiajobs.target.com/,no,yes,Radancy India site over Workday; Bengaluru
+Tekion,SaaS,T2,greenhouse,tekion,https://job-boards.greenhouse.io/tekion,yes,yes,Bangalore/Chennai
+Tesco Technology,Retail Tech,T3,browser,https://www.tesco.com/careers/en-GB,https://www.tesco.com/careers/en-GB,no,yes,ATS unresolved
+Thomson Reuters,Enterprise/Infra,T3,workday,https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site,https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site,no,yes,
+ThoughtSpot,SaaS,T2,greenhouse,thoughtspot,https://www.thoughtspot.com/careers,no,no,No open roles seen; re-check later
+Toast,SaaS,T2,greenhouse,toast,https://careers.toasttab.com/jobs,yes,yes,Bengaluru/Chennai
+Tower Research Capital,Quant/HFT,T1,greenhouse,towerresearchcapital,https://www.tower-research.com/open-positions,yes,yes,"Gurgaon: SWE, low-latency, interns"
+Trellix,Security,T3,workday,https://trellix.wd1.myworkdayjobs.com/EnterpriseCareers,https://careers.trellix.com/jobs/?_categories=product-development,no,yes,
+Twilio,SaaS,T1,greenhouse,twilio,https://www.twilio.com/en-us/company/jobs,yes,yes,Bengaluru eng
+Uber,Big Tech,T1,oracle_hcm,https://iaziqy.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=UberCareers,https://jobs.uber.com/en/jobs/?location=IND--Karnataka-Bangalore,no,yes,Oracle HCM backend; siteNumber unconfirmed - verify via browser network tab
+Udaan,Indian Consumer,T2,browser,https://careers.udaan.com/,https://careers.udaan.com/,no,yes,Early talent page exists
+Unacademy,Edtech,T3,html,https://wellfound.com/company/unacademy/jobs,https://careers.unacademy.com/,no,no,Redirects to Wellfound; low priority
+Uniphore,SaaS,T3,workday,https://uniphore.wd503.myworkdayjobs.com/Uniphore,https://www.uniphore.com/careers/,no,yes,
+Upstox,Fintech India,T3,lever,upstox,https://upstox.com/careers/,yes,yes,SDE Intern seen; Lever board may be partial
+Urban Company,Indian Consumer,T2,browser,https://careers.urbancompany.com/jobs,https://careers.urbancompany.com/jobs,no,yes,In-house JS; SDE-1 roles exist
+Veeva Systems,SaaS,T2,lever,veeva,https://careers.veeva.com/job-search-results/,yes,yes,Hyderabad Associate SWE roles
+Visa,Fintech MNC,T2,smartrecruiters,Visa,https://corporate.visa.com/en/jobs/?cities=Bangalore,no,yes,Bangalore/Mumbai
+Walmart Global Tech India,Big Tech,T1,workday,https://walmart.wd5.myworkdayjobs.com/WalmartExternal,https://careers.walmart.com/results?q=software&jobCity=Bangalore,no,yes,Bengaluru/Chennai hubs; filter location IN
+Wayfair,Consumer MNC,T2,browser,https://www.wayfair.com/careers/jobs?location=Bengaluru,https://www.wayfair.com/careers/jobs?location=Bengaluru,no,yes,In-house JS list
+Western Digital,Semis/Hardware,T3,smartrecruiters,WesternDigital,https://careers.smartrecruiters.com/WesternDigital,yes,yes,
+Whatfix,SaaS,T2,recruiterbox,https://jsapi.recruiterbox.com/v1/openings?client_name=whatfix101,https://whatfix.com/careers/,yes,yes,Trakstar Hire JSON; Bengaluru
+WinZO,Gaming,T2,browser,https://winzo.keka.com/careers,https://www.winzogames.com/careers,no,yes,Keka
+Workday,Enterprise/Infra,T2,workday,https://workday.wd5.myworkdayjobs.com/Workday,https://workday.wd5.myworkdayjobs.com/Workday,no,yes,Pune/Chennai
+Zendesk,SaaS,T2,workday,https://zendesk.wd1.myworkdayjobs.com/zendesk,https://jobs.zendesk.com/us/en,no,yes,Pune
+Zepto,Indian Consumer,T2,browser,https://zepto.talentrecruit.com/career-page,https://www.zeptonow.com/careers,no,yes,TalentRecruit ATS
+Zerodha,Fintech India,T2,browser,https://careers.zerodha.com/,https://zerodha.com/careers/,no,yes,JS app; hires rarely
+Zeta,Fintech India,T2,lever,zeta,https://www.zeta.tech/in/careers/,yes,yes,
+Zomato (Eternal),Indian Consumer,T2,browser,https://www.eternal.com/careers/,https://www.eternal.com/careers/,no,yes,Covers Zomato/Blinkit/District; JS-loaded
+Zoom,SaaS,T2,workday,https://zoom.wd5.myworkdayjobs.com/Zoom,https://www.careers.zoom.us/job-results,no,yes,Bengaluru/Chennai
+Zscaler,Security,T2,greenhouse,zscaler,https://www.zscaler.com/careers,yes,yes,"India eng roles seen (Bangalore, Mohali)"
+Zupee,Gaming,T2,browser,https://zupee.keka.com/careers,https://www.zupee.com/careers/,no,yes,Keka
+LSEG,Banking Tech,T2,workday,https://lseg.wd3.myworkdayjobs.com/Graduate_Careers,https://lseg.wd3.myworkdayjobs.com/Graduate_Careers,no,yes,Early-career engineering programme; 2027 batch posting (deadline was 5 Aug 2026 - may reopen)
+Alteryx,SaaS,T3,browser,https://www.alteryx.com/careers,https://www.alteryx.com/careers,no,yes,Associate Software Engineer seen Sep 2026 on aggregator; verify board type
+Infosys,Enterprise/Infra,T4,browser,https://career.infosys.com/,https://career.infosys.com/,no,yes,Systems Engineer 2027 batch (mass hiring) - fallback option

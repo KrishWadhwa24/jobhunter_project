@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Jobs · {{ profile_name }}{% endblock %}
+{% macro qs(tab, show, levels, q) -%}
+/?tab={{ tab }}&show={{ show }}&levels={{ levels | join(',') }}{% if q %}&q={{ q | urlq }}{% endif %}
+{%- endmacro %}
+{% block content %}
+<div class="bar">
+  <div>
+    <h1>Jobs</h1>
+    <p class="sub">{{ rows | length }} {% if show == 'all' %}roles{% elif show == 'maybe' %}matches and maybes{% else %}matches{% endif %}
+      &middot; {% if selected | length == levels_all | length %}every level{% else %}{% for l in selected %}{{ l | level }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</p>
+  </div>
+  <form method="get" action="/">
+    <input type="hidden" name="tab" value="{{ tab }}"><input type="hidden" name="show" value="{{ show }}">
+    <input type="hidden" name="levels" value="{{ selected | join(',') }}">
+    <input class="search" type="search" name="q" value="{{ q }}" placeholder="Search company or title">
+  </form>
+</div>
+
+<div class="tabs">
+  {% for key, label in tabs %}
+    <a href="{{ qs(key, show, selected, q) }}" class="{% if tab == key %}on{% endif %}">{{ label }}</a>
+  {% endfor %}
+</div>
+
+<div class="filters">
+  <div class="seg">
+    {% for key, label in [('matches','Matches'),('maybe','Include maybe'),('all','All roles')] %}
+      <a href="{{ qs(tab, key, selected, q) }}" class="{% if show == key %}on{% endif %}">{{ label }}</a>
+    {% endfor %}
+  </div>
+  <div class="chips">
+    {% for lv in levels_all %}
+      {% set on = lv in selected %}
+      {% set nxt = (selected | reject('equalto', lv) | list) if on else (selected + [lv]) %}
+      <a class="chip {% if on %}on{% endif %}" href="{{ qs(tab, show, nxt, q) }}">{{ lv | level }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="list">
+{% for j in rows %}
+  <article class="row" style="animation-delay: {{ [loop.index0, 12] | min * 25 }}ms">
+    <div class="main">
+      <div class="meta"><span class="company">{{ j.company }}</span> &middot; {{ j.location or 'Location not stated' }}</div>
+      <a class="title" href="/job/{{ j.id }}">{{ j.title }}</a>
+      <div class="facts">
+        <span class="tag">{{ j.level | level }}</span>
+        <span class="score">{{ j.score }}</span>
+        {% if j.tier %}<span>{{ j.tier }}</span>{% endif %}
+        <span>{{ (j.reasons | jsonload)[:3] | join(' · ') }}</span>
+      </div>
+    </div>
+    <div class="actions">
+      {% set nxt = request.url.path ~ '?' ~ request.url.query %}
+      {% if tab in ('new', 'progress') %}
+        <form class="inline" method="post" action="/job/{{ j.id }}/action/apply"><input type="hidden" name="next" value="{{ nxt }}"><button class="btn solid" type="submit">Apply</button></form>
+        <form class="inline" method="post" action="/job/{{ j.id }}/action/referrers"><button class="btn" type="submit">Find referrers</button></form>
+        <details class="more"><summary aria-label="More">&#8943;</summary>
+          <div class="menu">
+            <form method="post" action="/job/{{ j.id }}/action/applied"><input type="hidden" name="next" value="{{ nxt }}"><button class="mi" type="submit">Already applied</button></form>
+            <form method="post" action="/job/{{ j.id }}/action/skip"><input type="hidden" name="next" value="{{ nxt }}"><button class="mi" type="submit">Hide</button></form>
+            <a href="{{ j.url }}" target="_blank" rel="noopener">Open posting</a>
+          </div>
+        </details>
+      {% else %}
+        <a class="btn" href="{{ j.url }}" target="_blank" rel="noopener">Open posting</a>
+        <form class="inline" method="post" action="/job/{{ j.id }}/action/reopen"><input type="hidden" name="next" value="{{ nxt }}"><button class="btn quiet" type="submit">Move to New</button></form>
+      {% endif %}
+    </div>
+  </article>
+{% else %}
+  <div class="empty">
+    {% if not last_cycle %}<b>The first check has not finished.</b><br>Come back in a few minutes.
+    {% else %}<b>Nothing here yet.</b><br>Try <a href="{{ qs(tab, 'all', levels_all, q) }}">All roles</a> to see every level, or add more role types under <a href="/roles">Roles</a>.{% endif %}
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

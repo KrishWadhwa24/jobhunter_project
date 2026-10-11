@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Review resume · {{ profile_name }}{% endblock %}
+{% block content %}
+<div class="crumb"><a href="/resume">Resume</a> / Review</div>
+<h1>Review your resume facts</h1>
+<p class="sub">This is exactly what the tailor may use. Fix anything that was read wrongly: names, dates, wording. Add only things that are true. Each bullet's <b>weight</b> (1 to 5) is how much it matters when space is tight, and extra <b>variants</b> are other ways of saying the same thing.</p>
+{% if saved %}<div class="flash">Saved.</div>{% endif %}
+{% if error %}<div class="flash err">Not saved. {{ error }}</div>{% endif %}
+<form method="post" action="/resume/review" style="margin-top:24px">
+  <textarea name="text" rows="34" class="mono" spellcheck="false">{{ text }}</textarea>
+  <div class="savebar"><button class="btn solid" type="submit">Save</button><a class="btn quiet" href="/resume">Back</a></div>
+</form>
+{% endblock %}

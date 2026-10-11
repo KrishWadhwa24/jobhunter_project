@@ -1,0 +1,302 @@
+# Your resume facts: the ONLY source the resume tailor is allowed to draw from.
+#
+# Every sentence below comes from your own resumes. The tailor picks, orders and (optionally, with an LLM)
+# rewords these lines for each job. It never adds a technology, number or achievement that is not written here.
+# A checker rejects any rewrite that introduces one.
+#
+# To add something true that is missing (a skill you really have, a new project), add it here.
+# Do NOT add things you have not actually done: the tailor will happily use them.
+#
+# `variants` are alternative phrasings of the same fact (the first is the default). `weight` is how much the
+# line matters when space is tight (1-5).
+
+contact:
+  name: Krish Wadhwa
+  phone: "+91 7017111529"
+  email: krishwadhwa2005@gmail.com
+  location: Bengaluru, India
+  links:
+    - {label: LinkedIn, url: "https://linkedin.com/in/krish-wadhwa-815680235"}
+    - {label: GitHub, url: "https://github.com/KrishWadhwa24"}
+
+education:
+  school: Jaypee Institute of Information Technology (JIIT), Noida
+  degree: B.Tech, Computer Science and Engineering
+  dates: Aug 2023 – May 2027
+  detail: "CGPA: 8.8/10"
+
+summary:
+  - id: backend
+    variants:
+      - >-
+        Backend-focused Computer Science undergraduate (B.Tech 2027, CGPA 8.8/10) with production experience
+        architecting, testing, and shipping scalable REST APIs and distributed data pipelines in Java/Spring Boot,
+        Golang, Node.js, and Python. Comfortable across MySQL, PostgreSQL, MongoDB, and Redis, with hands-on
+        experience load-testing event-streaming systems for throughput, latency, and fault tolerance, writing
+        automated unit/functional test suites, and maintaining a live, multi-user production platform.
+  - id: distributed
+    variants:
+      - >-
+        CS undergraduate (B.Tech 2027, CGPA 8.8/10) building real-time, low-latency distributed backends in Java, Go,
+        and Python. SDE intern at MoveInSync, where I ship production services on event-driven Kafka pipelines and cut
+        location-resolution latency by ~60% across 12 business organizations. Outside work I build and operate my own
+        systems: a live market-analytics platform with 30+ daily users emitting alerts in 0.3–0.5s, and an async
+        geospatial matching service, both designed for resiliency with dead-letter queues, retry paths, and automated
+        test coverage.
+  - id: ships
+    variants:
+      - >-
+        Backend-focused CS undergraduate (B.Tech 2027, CGPA 8.8/10) who ships software real people depend on:
+        production Java/Spring Boot services at MoveInSync feeding attendance and billing pipelines, and a live
+        Go/PostgreSQL fintech platform run for 30+ active users on market days. Distributed systems and data storage
+        in practice: Kafka load testing, event-driven pipelines, Redis-backed state, and third-party market-data,
+        auth, and messaging integrations with retries and dead-letter queues. Works natively on Linux and writes
+        automated tests as a design tool.
+  - id: fullstack
+    variants:
+      - >-
+        Full-stack engineer and CS undergraduate (B.Tech 2027, CGPA 8.8/10) interning onsite in Bengaluru, shipping
+        enterprise web applications end to end: an Angular/TypeScript carpooling product for corporate customers,
+        backed by object-oriented REST services in Java and Spring Boot over relational databases. Strong on the
+        debugging side: root-cause analysis across the application, API, and database layers on live production
+        systems serving 12 business organizations. Comfortable with Python data work, SQL query design, Azure
+        storage, and automated testing.
+  - id: automation
+    variants:
+      - >-
+        Computer Science undergraduate (B.Tech 2027, CGPA 8.8/10) who builds automation: scheduled job orchestration,
+        workflow-based state machines, and REST integrations that remove manual steps from business processes.
+        SDE intern at MoveInSync, where I automated a daily data-reconciliation process, integrated REST APIs across
+        attendance and billing systems, and triaged production issues down to root cause. Comfortable scripting in
+        Python and Java, querying SQL and MongoDB, and working with JSON and third-party SaaS APIs.
+
+experience:
+  - company: MoveInSync
+    title: Software Development Engineer (SDE) Intern
+    location: Bengaluru, India
+    dates: May 2026 – Present
+    bullets:
+      - id: api
+        weight: 5
+        variants:
+          - >-
+            Designed and developed 2 production-grade REST APIs using Java and Spring Boot to capture and persist
+            employees' actual pickup and drop-off GPS locations, replacing estimated/scheduled data used by downstream
+            attendance and billing microservices.
+          - >-
+            Designed and shipped 2 production REST APIs (Java, Spring Boot) capturing employees' actual pickup and
+            drop-off GPS locations, and drove adoption with downstream attendance and billing teams to replace
+            estimated data across their microservices.
+          - >-
+            Designed and shipped 2 production REST APIs in Java and Spring Boot applying OOP and layered backend
+            architecture, capturing and persisting employees' actual pickup and drop-off GPS locations; drove adoption
+            with downstream attendance and billing teams to replace estimated data across their microservices.
+          - >-
+            Designed and shipped 2 production REST APIs (Java, Spring Boot) and drove their integration into the
+            attendance and billing systems owned by other teams, replacing estimated data with actual captured data
+            across those workflows.
+      - id: timestamp
+        weight: 5
+        variants:
+          - >-
+            Optimized actual pickup/drop-off event detection by replacing latitude/longitude proximity checks with
+            timestamp-based matching, making location resolution ~60% faster; reconciliation now completes in 2.4
+            seconds live in production across 12 business organizations.
+          - >-
+            Cut event-detection latency by ~60% through root-cause analysis of a hot path, replacing lat/long
+            proximity checks with timestamp-based matching; reconciliation now completes in 2.4s in production across
+            12 business organizations.
+          - >-
+            Diagnosed and triaged a production performance issue through root cause analysis, replacing an
+            inefficient matching approach with timestamp-based logic, ~60% faster resolution, with the process now
+            completing in 2.4s across 12 business organizations.
+      - id: orchestrator
+        weight: 4
+        variants:
+          - >-
+            Architected a scheduled orchestrator service that runs 24 hours after trip completion, reprocessing raw
+            GPS packets through a distributed pipeline to accurately mark employee attendance, improving platform
+            reliability and data quality at scale.
+          - >-
+            Built a scheduled orchestrator that reprocesses raw, high-volume GPS packet streams 24 hours post-trip
+            through a data-processing pipeline, turning noisy telemetry into an authoritative attendance record and
+            improving downstream analytics quality.
+          - >-
+            Automated a manual reconciliation process by building a scheduled orchestrator that reprocesses raw trip
+            data 24 hours post-completion through a workflow pipeline, turning noisy telemetry into an authoritative
+            attendance record used by downstream teams.
+      - id: kafka
+        weight: 4
+        variants:
+          - >-
+            Load-tested Apache Kafka event-streaming pipelines, capturing throughput, latency, and fault-tolerance
+            telemetry to validate distributed systems under high message volume, directly informing operational
+            tuning decisions.
+          - >-
+            Load-tested Apache Kafka distributed messaging pipelines under high message volume, instrumenting
+            throughput, end-to-end latency, and fault-tolerance behaviour to characterise failure modes and drive
+            operational tuning decisions.
+      - id: azure
+        weight: 3
+        variants:
+          - >-
+            Migrated location services data to Azure Table Storage, handling schema and partitioning design and
+            validating data integrity across the cutover.
+      - id: angular
+        weight: 3
+        variants:
+          - >-
+            Built a full carpooling application for enterprise customers in Angular and TypeScript, delivering it end
+            to end against backend REST APIs, covering UI, API integration, and cross-layer debugging.
+
+projects:
+  - id: tradenexus
+    weight: 5
+    names:
+      - "TradeNexus — Stock Research & Signal Platform"
+      - "TradeNexus — Real-Time Market Analytics Platform"
+      - "TradeNexus — Automated Market Monitoring Platform"
+    stack: [Golang, Gin, PostgreSQL, Redis, Docker]
+    links:
+      - {label: GitHub, url: "https://github.com/KrishWadhwa24"}
+      - {label: Live Demo, url: "https://trade-nexus-smoky.vercel.app"}
+    bullets:
+      - id: platform
+        weight: 5
+        variants:
+          - >-
+            Built a production-grade research and signal platform for Indian equity markets (NSE/BSE) in Golang/Gin
+            with a clean-architecture, event-driven REST API pipeline backed by PostgreSQL and Redis.
+          - >-
+            Built and operate a live real-time analytics platform for Indian equity markets (NSE/BSE): 30+ active
+            users, containerized with Docker Compose, monitored and debugged every market day.
+      - id: indicators
+        weight: 4
+        variants:
+          - >-
+            Built an incremental indicator engine (EMA, SMA, RSI, ATR) with Redis-backed state and incremental candle
+            aggregation; added Pine Script strategy translation and multi-timeframe confidence scoring.
+          - >-
+            Wrote an incremental indicator engine (EMA, SMA, RSI, ATR) with Redis-backed state and streaming candle
+            aggregation, keeping recomputation O(1) per tick instead of rescanning history.
+      - id: alerts
+        weight: 4
+        variants:
+          - >-
+            Built a paper-trading engine with market-hours enforcement and a Telegram alerting worker backed by a
+            dead-letter queue, generating alerts within 0.3–0.5 seconds and sourcing live data via Angel One
+            SmartAPI.
+          - >-
+            Designed an alerting worker backed by a dead-letter queue and retry path so transient delivery failures
+            never drop a signal, sustaining 0.3–0.5s end-to-end alert latency off live market data feeds.
+          - >-
+            Integrated third-party SaaS APIs (Angel One SmartAPI for market data, Telegram Bot API for delivery) into
+            an automated monitoring and alerting workflow, emitting alerts in 0.3–0.5s.
+      - id: live
+        weight: 3
+        variants:
+          - >-
+            Operate a live platform with an active user base of 30+ traders using real-time scanners and alerting,
+            maintained and monitored on market days.
+          - >-
+            Live with 30+ active traders, owned end to end: built, deployed, monitored, and on the hook when it
+            breaks on market days.
+  - id: edge_return
+    weight: 4
+    names:
+      - "Amazon Edge-Return — P2P Logistics & Resale Platform"
+      - "Amazon Edge-Return — Real-Time P2P Logistics Platform"
+      - "Amazon Edge-Return — Full-Stack Logistics Platform"
+      - "Amazon Edge-Return — Workflow Automation for P2P Logistics"
+    stack: [Python, FastAPI, Next.js, PostgreSQL, Redis, MongoDB]
+    links:
+      - {label: GitHub, url: "https://github.com/KrishWadhwa24"}
+    bullets:
+      - id: geo
+        weight: 4
+        variants:
+          - >-
+            Built a full-stack backend platform (Next.js, async FastAPI, PostgreSQL, Redis) with a real-time
+            geospatial matching engine using Redis GEOADD/GEOSEARCH to match buyer intent signals within a 20km
+            radius.
+          - >-
+            Built an async FastAPI backend with a real-time geospatial matching engine using Redis GEOADD/GEOSEARCH to
+            resolve buyer intent within a 20km radius on every request.
+      - id: lifecycle
+        weight: 4
+        variants:
+          - >-
+            Architected an 8-state order lifecycle state machine, a WebSocket notification pipeline, and REST APIs
+            powering an admin dashboard for batch dispatch, with condition-tier grading and an automated
+            reverse-logistics router for return matching, designed for scalability and testability.
+          - >-
+            Architected an 8-state order lifecycle state machine with a WebSocket push pipeline and an automated
+            reverse-logistics router, keeping distributed order state consistent across concurrent updates.
+          - >-
+            Architected an 8-state order lifecycle state machine encoding the full business process end to end, with
+            an automated reverse-logistics router that matches returns without manual intervention.
+  - id: academiq
+    weight: 3
+    names:
+      - "AcademiQ — Olympiad Contest Platform"
+      - "AcademiQ — Live Contest Platform"
+    stack: [Node.js, TypeScript, MongoDB, Firebase, Jest]
+    links:
+      - {label: GitHub, url: "https://github.com/KrishWadhwa24"}
+    bullets:
+      - id: platform
+        weight: 3
+        variants:
+          - >-
+            Built a full-stack Olympiad contest platform backend with real-time subjects and dynamic leaderboards on
+            Node.js and NoSQL (Firestore/MongoDB-style) data models.
+          - >-
+            Built real-time contest and dynamic leaderboard services with auth and role-based access control on
+            MongoDB.
+      - id: tests
+        weight: 3
+        variants:
+          - >-
+            Implemented authentication and role-based access control REST endpoints; wrote a Jest unit-test suite
+            across contest and ranking backend modules to drive up automated test coverage.
+          - >-
+            Wrote a Jest unit and integration test suite across contest and ranking modules to support acceptance
+            testing before release.
+      - id: perf
+        weight: 3
+        variants:
+          - >-
+            Optimized NoSQL query batching and server-side caching to reduce leaderboard API latency.
+
+skills:
+  - category: Languages
+    items: [Java, Python, Golang, JavaScript, TypeScript, SQL, C/C++]
+  - category: Backend & APIs
+    items: [REST APIs, Microservices, Event-Driven Architecture, Spring Boot, FastAPI, Gin, Node.js, Express.js,
+            WebSockets, Clean Architecture, OOP, Layered Architecture, Third-party SaaS API integration, JSON,
+            Webhooks]
+  - category: Distributed Systems & Messaging
+    items: [Apache Kafka, Distributed Systems, System Design, Pub/Sub messaging, Dead-letter queues,
+            Data pipelines, Scheduled job orchestration, State machines]
+  - category: Databases & Caching
+    items: [PostgreSQL, MySQL, MongoDB, Redis, NoSQL, Firebase, SQL query design, Azure Table Storage]
+  - category: Cloud & DevOps
+    items: [Docker, Docker Compose, Azure, Linux, Git, GitHub, Agile]
+  - category: Testing & Reliability
+    items: [Jest, Unit Testing, Integration Testing, Functional Testing, Load Testing, Test Automation,
+            Root-cause analysis, Performance tuning, Production debugging, Code reviews]
+  - category: Frontend
+    items: [Angular, React, Next.js, HTML, CSS]
+  - category: Core CS
+    items: [Data Structures & Algorithms, Operating Systems, Computer Networks, DBMS, Object-Oriented Design]
+
+achievements:
+  - weight: 3
+    variants:
+      - "Solved 1000+ DSA problems (750+ LeetCode, 200+ Codeforces); LeetCode Knight, peak rating 1904; CodeChef 3-Star (peak 1644); Codeforces Pupil (peak 1203)."
+  - weight: 3
+    variants:
+      - "1st Place — JIIT OSDHACK Hackathon 2024 and CodeRage Coding Competition 2025."
+  - weight: 2
+    variants:
+      - "Top 300 teams nationwide in the Amazon Hackathon for an AI-powered shopping solution."
